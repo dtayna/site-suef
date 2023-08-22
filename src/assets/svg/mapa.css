@@ -1,0 +1,124 @@
+  #mapa-svg svg {
+    max-height: 500px;
+  }
+
+  #mapa-estado-svg {
+    max-width: 800px;
+    min-width: 400px;
+  }
+  
+  .direc-1 path {
+    fill:teal !important;
+  }
+  .direc-1:hover path {
+    fill:rgb(0, 182, 182) !important;
+  }
+  
+  .direc-2 path {
+    fill:crimson !important;
+  }
+  .direc-2:hover path {
+    fill:rgb(245, 70, 105) !important;
+  }
+  
+  .direc-3 path {
+    fill:aquamarine !important;
+  }
+  .direc-3:hover path {
+    fill:rgb(20, 255, 255) !important;
+  }
+  
+  .direc-4 path {
+    fill:olive !important;
+  }
+  .direc-4:hover path {
+    fill:rgb(167, 167, 65) !important;
+  }
+  
+  .direc-5 path {
+    fill:rgb(255, 255, 90) !important;
+  }
+  .direc-5:hover path {
+    fill:rgb(255, 255, 180) !important;
+  }
+  
+  .direc-6 path {
+    fill:darkslateblue !important;
+  }
+  .direc-6:hover path {
+    fill:rgb(125, 100, 230) !important;
+  }
+  
+  .direc-7 path {
+    fill:tomato !important;
+  }
+  .direc-7:hover path {
+    fill:rgb(255, 150, 135) !important;
+  }
+  
+  .direc-8 path {
+    fill:cadetblue !important;
+  }
+  .direc-8:hover path {
+    fill:rgb(150, 255, 255) !important;
+  }
+  
+  .direc-9 path {
+    fill:chartreuse !important;
+  }
+  .direc-9:hover path {
+    fill:rgb(185, 255, 110) !important;
+  }
+  
+  .direc-10 path {
+    fill:dodgerblue !important;
+  }
+  .direc-10:hover path {
+    fill:rgb(140, 195, 255) !important;
+  }
+  
+  .direc-11 path {
+    fill:red !important;
+  }
+  .direc-11:hover path {
+    fill:rgb(255, 70, 70) !important;
+  }
+  
+  .direc-12 path {
+    fill:yellow !important;
+  }
+  .direc-12:hover path {
+    fill:rgb(255, 255, 180) !important;
+  }
+  
+  .direc-13 path {
+    fill:orange !important;
+  }
+  .direc-13:hover path {
+    fill:rgb(255, 200, 100) !important;
+  }
+  
+  .direc-14 path {
+    fill:white !important;
+  }
+  .direc-14:hover path {
+    fill:rgb(215, 215, 215) !important;
+  }
+  
+  .direc-15 path {
+    fill:green !important;
+  }
+  .direc-15:hover path {
+    fill:rgb(70, 170, 70) !important;
+  }
+  
+  .direc-16 path {
+    fill: rgb(0, 30, 80) !important;
+  }
+  .direc-16:hover path {
+    fill:rgb(95, 130, 200) !important;
+  }
+  
+  ul li .map {
+    color: black;
+  }

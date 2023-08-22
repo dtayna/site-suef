@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import Header from './containers/header';
+import Footer from './components/footer';
+import MyRoutes from "./utils/routes";
+
+const Paginas = styled.main`
+  background-color: #f6f6f6;
+  padding-top: 0px;
+`;
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <Paginas>
+      <MyRoutes/>
+      </Paginas>
+      <Footer/>
     </div>
   );
 }
