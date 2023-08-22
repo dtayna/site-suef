@@ -19,10 +19,10 @@ const ItemFooter = styled.div`
 
 const Footer = () => {
     return(
-        <FooterContainer>
-            <ItemFooter>testeooooooooooooooooooooooo1</ItemFooter>
-            <ItemFooter>test2</ItemFooter>
-            <ItemFooter>teste3</ItemFooter>
+        <FooterContainer className="row">
+            <ItemFooter className="col-10">testeooooooooooooooooooooooo1</ItemFooter>
+            <ItemFooter className="col-10">test2</ItemFooter>
+            <ItemFooter className="col-10">teste3</ItemFooter>
             
         </FooterContainer>
     );

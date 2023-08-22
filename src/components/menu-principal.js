@@ -41,7 +41,7 @@ const MenuPrincipal = () => {
       <ItemMenu  itemcolor={green}>CONTATOS</ItemMenu>
       <ItemMenu  itemcolor={blue}>DOCUMENTOS</ItemMenu>
       <ItemMenu  itemcolor={red}>PROJETOS</ItemMenu>
-      <ItemMenu  itemcolor={darkblue}>EQUIPE</ItemMenu>
+      <Link className="links" to="/equipe"><ItemMenu  itemcolor={darkblue}>EQUIPE</ItemMenu></Link>
       </BrowserRouter>
     </ContainerMenu>
     

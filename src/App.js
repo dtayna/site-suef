@@ -6,6 +6,7 @@ import MyRoutes from "./utils/routes";
 const Paginas = styled.main`
   background-color: #f6f6f6;
   padding-top: 0px;
+  margin-top: 0px;
 `;
 
 function App() {
