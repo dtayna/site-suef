@@ -19,15 +19,11 @@ const ItemFooter = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px 30px 30px 30px;
+    padding: 20px 30px 20px 30px;
     min-width: 300px;
     max-width: 300px;
     text-wrap: wrap;
 
-    @media screen and (max-width: 700px) {
-       border-bottom: 1px solid white;
-       margin-bottom: 30px;
-    }
 `;
 
 const SubItemFooter = styled.div`
@@ -71,9 +67,14 @@ const TituloItem = styled.h3`
 `;
 
 const Linha = styled.hr`
-    margin-bottom: 15px;
-    border-top: 1px solid white;
-    font-weight: 100;
+    display: none;
+
+    @media screen and (max-width: 734px) {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid white;
+        margin-top: 15px;
+     }
 `;
 
 const LogoRN = styled.img`
@@ -89,10 +90,10 @@ const Footer = () => {
     return(
         <FooterContainer>
             <ItemFooter>
-               
                 <TituloItem> SUBCOORDENADORIA DO ENSINO FUNDAMENTAL</TituloItem>
                 <TextoItemStart>CODESE - Coordenadoria do Desenvolvimento Escolar</TextoItemStart>
-                 </ItemFooter>
+                <Linha/>
+            </ItemFooter>
             <ItemFooter>
                 <SubItemFooter>
                     <LogosFooter>
@@ -118,6 +119,7 @@ const Footer = () => {
                         Tel.: (84) 3232-0000
                     </TextoItemStart>
                 </SubItemFooter>
+                <Linha/>
             </ItemFooter>
             <ItemFooter>
                 <TextoItemStart> <LogoRN src={UrlLogoRN}/></TextoItemStart>

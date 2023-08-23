@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import { Link, BrowserRouter } from 'react-router-dom';
+import { CgMenu } from 'react-icons/cg';
 import '../styles/global.css';
 
-const ItemMenu = styled.div`
+const ItemMenuDesktop = styled.div`
   font-size: 0.8em;
   min-width: 90px;
   text-align: center;
@@ -15,14 +16,45 @@ const ItemMenu = styled.div`
   font-weight: bold;
 `;
 
-const ContainerMenu = styled.div`
+const BlockDesktop = styled.div`
+  transparent;
+  display: block;
+  @media screen and (max-width: 930px) {
+    display: none;
+  }`
+;
+
+const BlockSmartphone = styled.div`
+    transparent;
+    display: none;
+    @media screen and (max-width: 930px) {
+      display: block;
+    }
+`;
+
+const ContainerMenuDesktop = styled.div`
   transparent;
   display: flex;
   justify-content: center;
+`;
 
-  @media screen and (max-width: 700px) {
-    display: none;
-  }
+const ContainerMenuSmartphone = styled.div`
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 3px 5% 3px; 
+`;
+
+const IconMenu = styled.div`
+  font-size: 2.5em;
+  color: #003453;
+  border-radius: 5px;
+  border: 1px solid #ccd3d5;
+  max-width: 50px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const itemcolor = {};
@@ -33,21 +65,32 @@ const green = '#B9C73A';
 const blue = '#57C1F2';
 const red = '#FC6E3D'; 
 
+const cinza = "#4F4F4F";
+
 // Antigo yellow #FFAB08
 
 const MenuPrincipal = () => {
   return(
-    <ContainerMenu>
-      <BrowserRouter >
-      <Link className="links" to="/"><ItemMenu itemcolor={darkblue}>INÍCIO</ItemMenu></Link>
-      <Link className="links" to="/mapa"><ItemMenu  itemcolor={pink}>MAPA</ItemMenu></Link>
-      <ItemMenu  itemcolor={yellow}>EVENTOS</ItemMenu>
-      <ItemMenu  itemcolor={green}>CONTATOS</ItemMenu>
-      <ItemMenu  itemcolor={blue}>DOCUMENTOS</ItemMenu>
-      <ItemMenu  itemcolor={red}>PROJETOS</ItemMenu>
-      <Link className="links" to="/equipe"><ItemMenu  itemcolor={darkblue}>EQUIPE</ItemMenu></Link>
-      </BrowserRouter>
-    </ContainerMenu>
+    <>
+    <BlockDesktop>
+      <ContainerMenuDesktop>
+        <BrowserRouter >
+          <Link className="links" to="/"><ItemMenuDesktop itemcolor={darkblue}>INÍCIO</ItemMenuDesktop></Link>
+          <Link className="links" to="/mapa"><ItemMenuDesktop  itemcolor={pink}>MAPA</ItemMenuDesktop></Link>
+          <ItemMenuDesktop  itemcolor={yellow}>EVENTOS</ItemMenuDesktop>
+          <ItemMenuDesktop  itemcolor={green}>CONTATOS</ItemMenuDesktop>
+          <ItemMenuDesktop  itemcolor={blue}>DOCUMENTOS</ItemMenuDesktop>
+          <ItemMenuDesktop  itemcolor={red}>PROJETOS</ItemMenuDesktop>
+          <Link className="links" to="/equipe"><ItemMenuDesktop  itemcolor={darkblue}>EQUIPE</ItemMenuDesktop></Link>
+          </BrowserRouter>
+      </ContainerMenuDesktop>
+    </BlockDesktop>
+    <BlockSmartphone>
+      <ContainerMenuSmartphone>
+        <IconMenu><CgMenu/></IconMenu>
+      </ContainerMenuSmartphone>
+    </BlockSmartphone>
+    </>
     
   );
 }
