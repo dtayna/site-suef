@@ -19,6 +19,10 @@ const ContainerMenu = styled.div`
   transparent;
   display: flex;
   justify-content: center;
+
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
 `;
 
 const itemcolor = {};
