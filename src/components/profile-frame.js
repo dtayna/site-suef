@@ -21,6 +21,12 @@ const NomeProfile = styled.h4`
     color: #4F4F4F;
 `;
 
+const Funcao = styled.h5`
+    font-size: 0.8em;
+    color: #A9A9A9;
+    margin-top: -20px;
+`;
+
 const Description = styled.p`
     margin-top: 0px;
     color: #3d4147;
@@ -36,6 +42,7 @@ const  ProfileFrame = (props) => {
         <QuadroProfile> 
             <ImageProfile src={UrlProfileImage}></ImageProfile>
             <NomeProfile>Teste Fulano</NomeProfile>
+            <Funcao>Coordenador</Funcao>
             <Description> bdkfjdhskjndj usdfh kjsnbsb sdkjfndsjkh sdkjshsmndsbdd</Description>
         </QuadroProfile>
         
