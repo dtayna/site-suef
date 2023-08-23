@@ -26,6 +26,7 @@ const ItemFooter = styled.div`
 
     @media screen and (max-width: 700px) {
        border-bottom: 1px solid white;
+       margin-bottom: 30px;
     }
 `;
 
@@ -36,6 +37,10 @@ const SubItemFooter = styled.div`
     align-items: center;
     justify-content: left;
     gap: 15px;
+
+    @media screen and (max-width: 734px) {
+        justify-content: center;
+     }
 `;
 
 const LogosFooter = styled.div`
@@ -45,6 +50,9 @@ const LogosFooter = styled.div`
 const TextoItemStart = styled.p`
     text-align: start;
     font-weight: 100;
+    @media screen and (max-width: 734px) {
+        text-align: center;
+     }
   
 `;
 
@@ -55,7 +63,11 @@ const TextoItemCenter = styled.p`
 `;
 
 const TituloItem = styled.h3`
-    text-align: center;
+    text-align: Start;
+
+    @media screen and (max-width: 734px) {
+        text-align: center;
+     }
 `;
 
 const Linha = styled.hr`
@@ -79,7 +91,7 @@ const Footer = () => {
             <ItemFooter>
                
                 <TituloItem> SUBCOORDENADORIA DO ENSINO FUNDAMENTAL</TituloItem>
-                <TextoItemCenter>CODESE - Coordenadoria do Desenvolvimento Escolar</TextoItemCenter>
+                <TextoItemStart>CODESE - Coordenadoria do Desenvolvimento Escolar</TextoItemStart>
                  </ItemFooter>
             <ItemFooter>
                 <SubItemFooter>
