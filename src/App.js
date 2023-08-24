@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import Header from './containers/header';
-import Footer from './components/footer';
-import MyRoutes from "./utils/routes";
+import Footer from './containers/footer';
+import MyRoutes from './utils/routes';
+import { GlobalStyles } from './components/global-components';
 
 const Paginas = styled.main`
   background-color: #f6f6f6;
@@ -13,11 +14,13 @@ const Paginas = styled.main`
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Paginas>
-      <MyRoutes/>
-      </Paginas>
-      <Footer/>
+      <GlobalStyles>
+        <Header/>
+        <Paginas>
+        <MyRoutes/>
+        </Paginas>
+        <Footer/>
+      </GlobalStyles>
     </div>
   );
 }

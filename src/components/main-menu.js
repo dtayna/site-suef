@@ -48,9 +48,9 @@ const ContainerMenuSmartphone = styled.div`
 
 const IconMenu = styled.div`
   font-size: 2.5em;
-  color: #003453;
+  color: var(--mainColor1);
   border-radius: 5px;
-  border: 1px solid #ccd3d5;
+  border: 1px solid var(--colorBorder);
   max-width: 50px;
   margin: 5px;
   display: flex;
@@ -59,30 +59,21 @@ const IconMenu = styled.div`
 `;
 
 const itemcolor = {};
-const darkblue = '#003453';
-const pink = '#C65F9E';
-const yellow = '#FFAB08';
-const green = '#B9C73A';
-const blue = '#57C1F2';
-const red = '#FC6E3D'; 
 
-const cinza = "#4F4F4F";
 
-// Antigo yellow #FFAB08
-
-const MenuPrincipal = () => {
+const MainMenu = () => {
   return(
     <>
     <BlockDesktop>
       <ContainerMenuDesktop>
         <BrowserRouter >
-          <Link className="links" to="/"><ItemMenuDesktop itemcolor={darkblue}>INÍCIO</ItemMenuDesktop></Link>
-          <Link className="links" to="/mapa"><ItemMenuDesktop  itemcolor={pink}>MAPA</ItemMenuDesktop></Link>
-          <ItemMenuDesktop  itemcolor={yellow}>EVENTOS</ItemMenuDesktop>
-          <ItemMenuDesktop  itemcolor={green}>CONTATOS</ItemMenuDesktop>
-          <ItemMenuDesktop  itemcolor={blue}>DOCUMENTOS</ItemMenuDesktop>
-          <ItemMenuDesktop  itemcolor={red}>PROJETOS</ItemMenuDesktop>
-          <Link className="links" to="/equipe"><ItemMenuDesktop  itemcolor={darkblue}>EQUIPE</ItemMenuDesktop></Link>
+          <Link className="links" to="/"><ItemMenuDesktop itemcolor={"var(--darkblue)"}>INÍCIO</ItemMenuDesktop></Link>
+          <Link className="links" to="/mapa"><ItemMenuDesktop  itemcolor={"var(--pink)"}>MAPA</ItemMenuDesktop></Link>
+          <ItemMenuDesktop  itemcolor={"var(--yellow)"}>EVENTOS</ItemMenuDesktop>
+          <ItemMenuDesktop  itemcolor={"var(--green)"}>CONTATOS</ItemMenuDesktop>
+          <ItemMenuDesktop  itemcolor={"var(--blue)"}>DOCUMENTOS</ItemMenuDesktop>
+          <ItemMenuDesktop  itemcolor={"var(--red)"}>PROJETOS</ItemMenuDesktop>
+          <Link className="links" to="/equipe"><ItemMenuDesktop  itemcolor={"var(--darkblue)"}>EQUIPE</ItemMenuDesktop></Link>
           </BrowserRouter>
       </ContainerMenuDesktop>
     </BlockDesktop>
@@ -97,4 +88,4 @@ const MenuPrincipal = () => {
 }
 
 
-export default MenuPrincipal;
+export default MainMenu;

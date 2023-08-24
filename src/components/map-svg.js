@@ -9,7 +9,7 @@ const ContainerMapa = styled.div`
 `;
 
 
-const MapaSVG = () => {
+const MapSVG = () => {
     return(
     <ContainerMapa>
       <Mapa/>
@@ -18,4 +18,4 @@ const MapaSVG = () => {
   }
   
   
-  export default MapaSVG;
+  export default MapSVG;

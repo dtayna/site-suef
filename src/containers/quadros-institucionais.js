@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import TextFrame from '../components/text-frame';
+import TextCard from '../components/text-card';
 
 const ContainerQuadros = styled.section`
   display: flex;
@@ -24,7 +24,7 @@ const QuadrosInstitucionais = () => {
   return(
         <ContainerQuadros>
           <ContainerCol>
-            <TextFrame 
+            <TextCard
               tipo={"primario"}
               primeiro={true}
               titulo={"SUBCOORDENADORIA DO ENSINO FUNDAMENTAL - SUEF/SEEC-RN"} 
@@ -32,13 +32,13 @@ const QuadrosInstitucionais = () => {
             />
             </ContainerCol>
             <ContainerCol>
-            <TextFrame 
+            <TextCard
               tipo={"primari"}
               primeiro={false}
               titulo={"MISSÃO"} 
               texto={"Assegurar uma educação que garanta o acesso, a permanência e o suceso dos estudantes."}
             />
-            <TextFrame 
+            <TextCard
                tipo={"primario"}
               primeiro={false}
               titulo={"VALORES"} 

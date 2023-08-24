@@ -14,7 +14,7 @@ const Imagem1 = styled.img`
 `;
 
 
-const Carrossel = () => {
+const Carousel = () => {
     return(
         <CarrosselContainer >
             <Imagem1 src={URLimagemteste}/>
@@ -24,4 +24,4 @@ const Carrossel = () => {
   }
   
   
-  export default Carrossel;
+  export default Carousel;

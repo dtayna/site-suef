@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import MenuPrincipal from '../components/menu-principal';
-import MenuDeAcessibilidade from '../components/menu-de-acessibilidade';
+import MainMenu from '../components/main-menu';
+import AccessibilityMenu from '../components/accessibility-menu';
 import UrlLogoRN from '../assets/svg/brasaoRN.svg';
 import UrlLogoAcessoAInformacao from '../assets/acessoainformacao.png';
 
@@ -14,7 +14,7 @@ const ImagensContainer = styled.div`
     flex-wrap: wrap;
     background-color: white;
     padding: 20px 5% 20px 20px;
-    border-bottom: 1px solid #ccd3d5;
+    border-bottom: 1px solid var(--colorBorder);
 `;
 
 const AcessoAInformacaoContainer = styled.div`
@@ -62,7 +62,7 @@ const HeaderContainer = styled.header`
 const Header = () => {
     return(
         <HeaderContainer>
-            <MenuDeAcessibilidade/>
+            <AccessibilityMenu/>
             <ImagensContainer>
                 <AcessoAInformacaoContainer> 
                     <LogoAcessoAInformacao src={UrlLogoAcessoAInformacao} alt="Acesso à Informação."/>
@@ -72,7 +72,7 @@ const Header = () => {
                 </AcessoAInformacaoContainer>
                 <LogoRN src={UrlLogoRN}/>
             </ImagensContainer>
-            <MenuPrincipal/>
+            <MainMenu/>
         </HeaderContainer>
     );
   }

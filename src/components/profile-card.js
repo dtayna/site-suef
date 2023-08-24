@@ -9,7 +9,7 @@ const QuadroProfile = styled.div`
     background-color: white;
     max-width: 150px;
     border-radius: 5px;
-    box-shadow: 1px 2px 2px #e1e1e1;
+    box-shadow: 1px 2px 2px var(--grayShadow);
 `;
 
 const ImageProfile = styled.img`
@@ -18,25 +18,25 @@ const ImageProfile = styled.img`
 `;
 
 const NomeProfile = styled.h4`
-    color: #4F4F4F;
+    color: var(--colorTitle);
 `;
 
 const Funcao = styled.h5`
     font-size: 0.8em;
-    color: #A9A9A9;
+    color: var(--colorSubtitle);
     margin-top: -20px;
 `;
 
 const Description = styled.p`
     margin-top: 0px;
-    color: #3d4147;
+    color: var(--colorText);
     font-family: 'Montserrat',sans-serif;
     text-align: center;
     font-style: normal;
     font-weight: 300;
 `;
 
-const  ProfileFrame = (props) => {
+const  ProfileCard = (props) => {
     return( 
         <>
         <QuadroProfile> 
@@ -52,4 +52,4 @@ const  ProfileFrame = (props) => {
   }
   
   
-export default ProfileFrame;
+export default ProfileCard;

@@ -1,14 +1,11 @@
 import styled from 'styled-components';
-import TextFrame from '../components/text-frame';
 import QuadrosInstitucionais from '../containers/quadros-institucionais'
-import Carrossel from '../components/carrossel'
+import Carousel from '../components/carousel'
 
 const Inicio = () => {
   return(
-        <div>
-          
-          <QuadrosInstitucionais/>
-            
+        <div>   
+          <QuadrosInstitucionais/> 
         </div>
   );
 }

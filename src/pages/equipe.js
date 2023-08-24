@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import QuadroEquipe from '../containers/quadro-equipe';
+import TeamRoster from '../containers/team-roster';
 
 const Equipe = () => {
   return(
         <div> 
-          <QuadroEquipe></QuadroEquipe>
+          <TeamRoster/>
         </div>
   );
 }

@@ -1,3 +1,23 @@
+:root{
+    --darkblue: #003453;
+    --pink:#C65F9E;
+    --yellow: #FFAB08;
+    --green: #B9C73A;
+    --blue: #57C1F2;
+    --red: #FC6E3D; 
+
+    --mainColor1: #003453;
+    --mainColor2:#FC6E3D;
+
+    --colorTitle: #4F4F4F;
+    --colorSubtitle: #A9A9A9;
+    --colorText: #3d4147;
+
+    --colorBorder: #ccd3d5;
+
+    --grayShadow: #e1e1e1;
+}
+
 .links {
     text-decoration: none; 
 }

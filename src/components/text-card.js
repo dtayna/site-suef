@@ -1,11 +1,11 @@
 import styled from 'styled-components';
+import { Text } from './global-components';
 
 const DivTitulo = styled.div`
     margin: 0;
     padding: 20px;
-    background-color: #FC6E3D;
+    background-color: var(--mainColor2);
     border-radius: 5px 5px 0px 0px;
-    
 `;
 
 const DivTexto = styled.div`
@@ -26,21 +26,14 @@ const Quadro = styled.div`
     max-width: 500px;
     border-radius: 5px;
     margin: 30px;
-    box-shadow: 1px 2px 2px #e1e1e1;
+    box-shadow: 1px 2px 2px var(--grayShadow);
 `; 
 
-const Texto = styled.p`
-    color: #3d4147;
-    font-family: 'Montserrat',sans-serif;
-    text-align: center;
-    font-style: normal;
-    font-weight: 400;
-`; 
 
 const Linha = styled.hr`
     width: 90%;
     margin-bottom: 0;
-    border-top: 2px solid #FC6E3D;
+    border-top: 2px solid var(--mainColor2);
 `;
 
 const corTitulo = {};
@@ -48,16 +41,16 @@ const Tipo = {};
 
 //Antiga cor titulo corTitulo="#4F4F4F"
 
-const  TextFrame = (props) => {
+const  TextCard = (props) => {
     return( 
         <>
         
         <Quadro>
             {props.tipo=="primario"
             ?<DivTitulo><Titulo corTitulo="white">{props.titulo}</Titulo></DivTitulo>
-            :<><Titulo corTitulo="#FC6E3D">{props.titulo}</Titulo><Linha></Linha></>
+            :<><Titulo corTitulo="var(--mainColor2)">{props.titulo}</Titulo><Linha></Linha></>
             }
-            <DivTexto><Texto>{props.texto}</Texto></DivTexto>
+            <DivTexto><Text fontFamily="'Montserrat',sans-serif">{props.texto}</Text></DivTexto>
         </Quadro>
         
         </>
@@ -66,4 +59,4 @@ const  TextFrame = (props) => {
   }
   
   
-export default TextFrame;
+export default TextCard;
