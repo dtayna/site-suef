@@ -40,11 +40,13 @@ const Texto = styled.p`
 const Linha = styled.hr`
     width: 90%;
     margin-bottom: 0;
-    border-top: 2px solid #f4cd40;
+    border-top: 2px solid #FC6E3D;
 `;
 
 const corTitulo = {};
 const Tipo = {};
+
+//Antiga cor titulo corTitulo="#4F4F4F"
 
 const  TextFrame = (props) => {
     return( 
@@ -53,7 +55,7 @@ const  TextFrame = (props) => {
         <Quadro>
             {props.tipo=="primario"
             ?<DivTitulo><Titulo corTitulo="white">{props.titulo}</Titulo></DivTitulo>
-            :<><Titulo corTitulo="#4F4F4F">{props.titulo}</Titulo><Linha></Linha></>
+            :<><Titulo corTitulo="#FC6E3D">{props.titulo}</Titulo><Linha></Linha></>
             }
             <DivTexto><Texto>{props.texto}</Texto></DivTexto>
         </Quadro>

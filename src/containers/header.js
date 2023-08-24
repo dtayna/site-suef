@@ -28,6 +28,11 @@ const AcessoAInformacaoContainer = styled.div`
     border-radius: 5px;
     min-width: 110px;
     max-height: 40px;
+
+    @media screen and (max-width: 734px) {
+        padding: 5px;
+        min-width: 30px;
+      }
 `;
 
 const TextoAcessoAInformacao = styled.p`
@@ -36,6 +41,10 @@ const TextoAcessoAInformacao = styled.p`
     font-style: italic;
     font-size: 10px;
     max-width: 70px;
+
+    @media screen and (max-width: 734px) {
+        display: none;
+      }
 `;
 
 const LogoRN = styled.img`
@@ -56,7 +65,7 @@ const Header = () => {
             <MenuDeAcessibilidade/>
             <ImagensContainer>
                 <AcessoAInformacaoContainer> 
-                    <LogoAcessoAInformacao src={UrlLogoAcessoAInformacao}/>
+                    <LogoAcessoAInformacao src={UrlLogoAcessoAInformacao} alt="Acesso à Informação."/>
                     <TextoAcessoAInformacao> 
                         ACESSO À INFORMAÇÃO.
                     </TextoAcessoAInformacao>

@@ -19,6 +19,7 @@ const ItemMenuDesktop = styled.div`
 const BlockDesktop = styled.div`
   transparent;
   display: block;
+  
   @media screen and (max-width: 930px) {
     display: none;
   }`
