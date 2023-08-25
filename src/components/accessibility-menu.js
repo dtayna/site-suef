@@ -9,7 +9,7 @@ const Item = styled.div`
   margin: 0px;
 `;
 
-const Container = styled.div`
+const Container = styled.nav`
   display: flex;
   justify-content: right;
   padding-right: 5%;

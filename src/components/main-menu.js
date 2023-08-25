@@ -33,13 +33,13 @@ const BlockSmartphone = styled.div`
     }
 `;
 
-const ContainerMenuDesktop = styled.div`
+const ContainerMenuDesktop = styled.nav`
   transparent;
   display: flex;
   justify-content: center;
 `;
 
-const ContainerMenuSmartphone = styled.div`
+const ContainerMenuSmartphone = styled.nav`
   display: flex;
   justify-content: right;
   align-items: center;

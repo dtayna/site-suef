@@ -57,7 +57,7 @@ export const ResponsiveRow = styled.div`
 //Components
 
 export const Text = styled.p`
-    color: ${props => props.color ? props.color : 'var(--grayText)'};
+    color: ${props => props.color ? props.color : 'var(--colorText)'};
     font-family: ${props => props.fontFamily ? props.fontFamily : 'inherit'};
     font-weight: ${props => props.fontWeight ? props.fontWeight : "400"};
 `;
