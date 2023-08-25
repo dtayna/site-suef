@@ -1,9 +1,23 @@
 import styled from 'styled-components';
 import { Link, BrowserRouter } from 'react-router-dom';
 import { CgMenu } from 'react-icons/cg';
+import { BlockDesktop , BlockTabletSmartphone } from './global-components';
 import '../styles/global.css';
 
-const ItemMenuDesktop = styled.div`
+const ContainerDesktop = styled.nav`
+  transparent;
+  display: flex;
+  justify-content: center;
+`;
+
+const ContainerSmartphone = styled.nav`
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 3px 5% 3px; 
+`;
+
+const ItemDesktop = styled.div`
   font-size: 0.8em;
   min-width: 90px;
   text-align: center;
@@ -16,37 +30,7 @@ const ItemMenuDesktop = styled.div`
   font-weight: bold;
 `;
 
-const BlockDesktop = styled.div`
-  transparent;
-  display: block;
-  
-  @media screen and (max-width: 930px) {
-    display: none;
-  }`
-;
-
-const BlockSmartphone = styled.div`
-    transparent;
-    display: none;
-    @media screen and (max-width: 930px) {
-      display: block;
-    }
-`;
-
-const ContainerMenuDesktop = styled.nav`
-  transparent;
-  display: flex;
-  justify-content: center;
-`;
-
-const ContainerMenuSmartphone = styled.nav`
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  padding: 3px 5% 3px; 
-`;
-
-const IconMenu = styled.div`
+const IconSmartphone = styled.div`
   font-size: 2.5em;
   color: var(--mainColor1);
   border-radius: 5px;
@@ -58,30 +42,36 @@ const IconMenu = styled.div`
   justify-content: center;
 `;
 
-const itemcolor = {};
-
-
 const MainMenu = () => {
   return(
     <>
     <BlockDesktop>
-      <ContainerMenuDesktop>
+      <ContainerDesktop>
         <BrowserRouter >
-          <Link className="links" to="/"><ItemMenuDesktop itemcolor={"var(--darkblue)"}>INÍCIO</ItemMenuDesktop></Link>
-          <Link className="links" to="/mapa"><ItemMenuDesktop  itemcolor={"var(--pink)"}>MAPA</ItemMenuDesktop></Link>
-          <ItemMenuDesktop  itemcolor={"var(--yellow)"}>EVENTOS</ItemMenuDesktop>
-          <ItemMenuDesktop  itemcolor={"var(--green)"}>CONTATOS</ItemMenuDesktop>
-          <ItemMenuDesktop  itemcolor={"var(--blue)"}>DOCUMENTOS</ItemMenuDesktop>
-          <ItemMenuDesktop  itemcolor={"var(--red)"}>PROJETOS</ItemMenuDesktop>
-          <Link className="links" to="/equipe"><ItemMenuDesktop  itemcolor={"var(--darkblue)"}>EQUIPE</ItemMenuDesktop></Link>
-          </BrowserRouter>
-      </ContainerMenuDesktop>
+          <Link className="links" to="/">
+            <ItemDesktop itemcolor={"var(--darkblue)"}>INÍCIO</ItemDesktop>
+          </Link>
+          <Link className="links" to="/mapa">
+            <ItemDesktop  itemcolor={"var(--pink)"}>MAPA</ItemDesktop>
+          </Link>
+          <ItemDesktop  itemcolor={"var(--yellow)"}>EVENTOS</ItemDesktop>
+          <ItemDesktop  itemcolor={"var(--green)"}>CONTATOS</ItemDesktop>
+          <ItemDesktop  itemcolor={"var(--blue)"}>DOCUMENTOS</ItemDesktop>
+          <ItemDesktop  itemcolor={"var(--red)"}>PROJETOS</ItemDesktop>
+          <Link className="links" to="/equipe">
+            <ItemDesktop  itemcolor={"var(--darkblue)"}>EQUIPE</ItemDesktop>
+          </Link>
+        </BrowserRouter>
+      </ContainerDesktop>
     </BlockDesktop>
-    <BlockSmartphone>
-      <ContainerMenuSmartphone>
-        <IconMenu><CgMenu/></IconMenu>
-      </ContainerMenuSmartphone>
-    </BlockSmartphone>
+
+    <BlockTabletSmartphone>
+      <ContainerSmartphone>
+        <IconSmartphone>
+          <CgMenu/>
+        </IconSmartphone>
+      </ContainerSmartphone>
+    </BlockTabletSmartphone>
     </>
     
   );

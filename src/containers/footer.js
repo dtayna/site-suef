@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { MdLocationOn , MdPhone, MdMailOutline } from 'react-icons/md';
 import UrlLogoRN from '../assets/svg/brasaoRN.svg';
-import { Text , Icon } from '../components/global-components';
+import { Text , Icon , Line , BlockSmartphone } from '../components/global-components';
 
 
 //Just Responsiveness
@@ -16,7 +16,7 @@ const StartToCenter = styled.div`
 
 //Containers
 
-const FooterContainer = styled.footer`
+const Container = styled.footer`
     position: relative;
     left: 0;
     margin-bottom: 0;
@@ -28,7 +28,7 @@ const FooterContainer = styled.footer`
     color: white; 
 `;
 
-const ItemFooter = styled.div`
+const Item = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +37,7 @@ const ItemFooter = styled.div`
     max-width: 300px;
 `;
 
-const SubItemFooter = styled.div`
+const SubItem = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -51,17 +51,6 @@ const SubItemFooter = styled.div`
 
 //Components
 
-const Linha = styled.hr`
-    display: none;
-
-    @media screen and (max-width: 734px) {
-        display: block;
-        width: 100%;
-        border-bottom: 1px solid white;
-        margin-top: 15px;
-     }
-`;
-
 const LogoRN = styled.img`
     max-width: 70px;
     display: block;
@@ -73,14 +62,16 @@ const LogoRN = styled.img`
 
 const Footer = () => {
     return(
-        <FooterContainer>
-            <ItemFooter>
+        <Container>
+            <Item>
                 <StartToCenter><h3> SUBCOORDENADORIA DO ENSINO FUNDAMENTAL</h3></StartToCenter>
                 <StartToCenter><Text color="white" fontWeight="50">CODESE - Coordenadoria do Desenvolvimento Escolar</Text></StartToCenter>
-                <Linha/>
-            </ItemFooter>
-            <ItemFooter>
-                <SubItemFooter>
+                <BlockSmartphone>
+                    <Line linecolor={"white"} linewidth={"100%"} lineborder={"1px solid white"}/>
+                </BlockSmartphone>
+            </Item>
+            <Item>
+                <SubItem>
                     <Icon>
                         <MdLocationOn/>
                     </Icon>
@@ -89,8 +80,8 @@ const Footer = () => {
                             Centro Administrativo do Estado - Av. Senador Salgado Filho, s/n, Lagoa Nova - Natal/RN. CEP: 59064-901
                         </Text>
                     </StartToCenter>
-                </SubItemFooter>
-                <SubItemFooter>
+                </SubItem>
+                <SubItem>
                     <Icon>
                         <MdMailOutline/>
                     </Icon>
@@ -99,8 +90,8 @@ const Footer = () => {
                             E-mail: algumacoisa@gmail.com
                         </Text>
                     </StartToCenter>
-                </SubItemFooter>
-                <SubItemFooter>
+                </SubItem>
+                <SubItem>
                     <Icon>
                         <MdPhone/>
                     </Icon>
@@ -109,17 +100,19 @@ const Footer = () => {
                             Tel.: (84) 3232-0000
                         </Text>
                     </StartToCenter>
-                </SubItemFooter>
-                <Linha/>
-            </ItemFooter>
-            <ItemFooter>
+                </SubItem>
+                <BlockSmartphone>
+                    <Line linecolor={"white"} linewidth={"100%"} lineborder={"1px solid white"}/>
+                </BlockSmartphone>
+            </Item>
+            <Item>
                 <StartToCenter> 
                     <LogoRN src={UrlLogoRN}/>
                 </StartToCenter>
                 <Text color="white" fontWeight="50">Secretaria de Estado da Educação, da Cultura, do Esporte e do Lazer - SEEC\RN</Text>
-            </ItemFooter>
+            </Item>
             
-        </FooterContainer>
+        </Container>
     );
   }
   

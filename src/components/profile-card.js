@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import UrlProfileImage from '../assets/perfilexemplo.jpeg'
 
-const QuadroProfile = styled.div`
+const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,16 +12,16 @@ const QuadroProfile = styled.div`
     box-shadow: 1px 2px 2px var(--grayShadow);
 `;
 
-const ImageProfile = styled.img`
+const Image = styled.img`
     max-width: 100px;
     border-radius: 50%;
 `;
 
-const NomeProfile = styled.h4`
+const Name = styled.h4`
     color: var(--colorTitle);
 `;
 
-const Funcao = styled.h5`
+const Office = styled.h5`
     font-size: 0.8em;
     color: var(--colorSubtitle);
     margin-top: -20px;
@@ -39,12 +39,12 @@ const Description = styled.p`
 const  ProfileCard = (props) => {
     return( 
         <>
-        <QuadroProfile> 
-            <ImageProfile src={UrlProfileImage}></ImageProfile>
-            <NomeProfile>Teste Fulano</NomeProfile>
-            <Funcao>Coordenador</Funcao>
+        <Container> 
+            <Image src={UrlProfileImage}></Image>
+            <Name>Teste Fulano</Name>
+            <Office>Coordenador</Office>
             <Description> bdkfjdhskjndj usdfh kjsnbsb sdkjfndsjkh sdkjshsmndsbdd</Description>
-        </QuadroProfile>
+        </Container>
         
         </>
           

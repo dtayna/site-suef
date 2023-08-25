@@ -35,6 +35,48 @@ export const Col = styled.div`
 
 //Responsive Containers
 
+export const BlockDesktop = styled.div`
+    transparent;
+    display: block;
+
+    @media screen and (max-width: 930px) {
+        display: none;
+    }`
+;
+
+export const BlockTablet = styled.div`
+    transparent;
+    display: none;
+
+    @media screen and (max-width: 930px) {
+        display: block;
+    }
+
+    @media screen and (max-width: 734px) {
+        display: none;
+    }
+`;
+
+export const BlockSmartphone = styled.div`
+    transparent;
+    display: none;
+
+    @media screen and (max-width: 734px) {
+        display: block;
+    }
+`;
+
+export const BlockTabletSmartphone = styled.div`
+    transparent;
+    display: none;
+
+    @media screen and (max-width: 930px) {
+        display: block;
+    }
+`;
+
+
+
 export const ResponsiveCol = styled.div`
     
 `;
@@ -65,6 +107,13 @@ export const Text = styled.p`
 export const Icon = styled.div`
     font-size: 1.5em;
     color: white;
+`;
+
+export const Line = styled.hr`
+    width: ${props => props.linewidth ? props.linewidth : "90%"};
+    margin-top: ${props => props.linemargintop ? props.linemargintop : "15px"};
+    margin-bottom: 0;
+    border-top: ${props => props.lineborder ? props.lineborder : "2px solid var(--mainColor2)"};
 `;
 
 const  None = () => {
