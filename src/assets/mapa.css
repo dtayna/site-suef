@@ -4,8 +4,8 @@
 
   #mapa-estado-svg {
     max-width: 800px;
-    min-width: 400px;
-  }
+    min-width: 350px;
+    }
   
   .direc-1 path {
     fill:teal !important;

@@ -104,6 +104,25 @@ export const Text = styled.p`
     font-weight: ${props => props.fontWeight ? props.fontWeight : "400"};
 `;
 
+export const Link = styled.a`
+    color: ${props => props.color ? props.color : 'var(--colorSubtitle)'};
+    font-family: ${props => props.fontFamily ? props.fontFamily : 'inherit'};
+    text-decoration: underline var(--colorSubtitle);
+    font-size: 14px;
+`;
+
+
+export const Title = styled.h2`
+    color: ${props => props.color ? props.color : 'var(--colorTitle)'};
+    textAlign: center ;
+`;
+
+export const SuperTitle = styled.h1`
+    color: ${props => props.color ? props.color : 'var(--colorTitle)'};
+    textAlign: center ;
+   
+`;
+
 export const Icon = styled.div`
     font-size: 1.5em;
     color: white;
@@ -114,6 +133,13 @@ export const Line = styled.hr`
     margin-top: ${props => props.linemargintop ? props.linemargintop : "15px"};
     margin-bottom: 0;
     border-top: ${props => props.lineborder ? props.lineborder : "2px solid var(--mainColor2)"};
+`;
+
+export const IconClose = styled.div`
+    background: transparent;
+    width: 20px;
+    color:  ${props => props.color ? props.color : 'var(--colorTitle)'};
+    float: right;
 `;
 
 const  None = () => {
