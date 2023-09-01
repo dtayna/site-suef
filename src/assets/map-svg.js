@@ -1,250 +1,297 @@
-import * as React from "react"
-import './mapa.css'
+import * as React from "react";
+import styled from 'styled-components';
+import './mapa.css';
+import '../styles/global.css';
+import { Title } from '../components/global-components';
+import { AiFillCaretDown } from 'react-icons/ai';
 
-const MapComponent = (props) => { 
+const MapLegendItem = styled.div`
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+`;
+const MapLegendColor = styled.div`
+    display block;
+    width: 10px;
+    height: 10px;
+`;
+const MapLegendText = styled.p`
+    font-style: italic;
+    font-size: 15px;
+    color: var(--textColor);
+`;
+
+const MapLegendContainer = styled.div`
+    background-color: white;
+    box-shadow: var(--grayBoxShadow);
+    border-radius: 5px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+`;
+
+const MapLegendSubContainer = styled.div`
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+`;
+
+const MapSVG = (props) => { 
+    const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];  
     return (
+        <>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="-38.5821 4.8314 3.613599999999998 2.1433" strokeLinecap="round" strokeLinejoin="round" id="mapa-estado-svg">
         <g id="UF-RN" transform="scale(0.0001,-0.0001)">
             {/*1ª DIREC */}
                 {/*Extremoz */}
                 <a onClick={() => props.activatePopup("Extremoz", [55, 23, 96, 80, 50, 40, 70, 30, 29])} className="direc-1" type="button">
-                    <title>Extremoz</title>
+                    <title>Extremoz - 1ª Direc </title>
                     <path id="2403608" d="M-352036,-57432l114,426l-254,295l-95,590l-577,-122l-762,-1042l478,-95l477,340l619,-392Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Macaíba */}
                 <a onClick={() => props.activatePopup("Macaíba", [55, 23, 96, 80, 50, 40, 70, 30, 29])} className="direc-1" type="button" >
-                    <title>Macaíba</title>
+                    <title>Macaíba - 1ª Direc</title>
                     <path id="2407104" d="M-352824,-58498l4,203l-266,-68l-1234,-89l-396,104l-174,36l-400,-506l-432,-505l348,-634l-203,-511l110,-72l1733,666l773,292l137,1084Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Natal */}
                 <a onClick={() => props.activatePopup("Natal", [10,10,10,10,10,5,5,5,5])} className="direc-1" type="button">
-                    <title>Natal (SEDE)</title>
+                    <title>Natal (SEDE) - 1ª Direc</title>
                     <path id="2408102" d="M-352036,-57432l-619,392l-258,-285l47,-310l343,-347l-297,-313l-4,-203l645,-188l417,-312l221,20l-252,333l0,656l-243,557Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*São G. do Amarante */}
                 <a onClick={() => props.activatePopup("São G. do Amarante", [55, 23, 96, 80, 50, 40, 70, 30, 29])} className="direc-1" type="button" >
-                    <title>São G. do Amarante</title>
+                    <title>São G. do Amarante - 1ª Direc </title>
                     <path id="2412005" d="M-352820,-58295l297,313l-343,347l-47,310l258,285l-477,-340l-478,95l-859,-49l-247,-1014l396,-104l1234,89l266,68Z" strokeWidth="200" stroke="black"></path>
                 </a>
             {/*1ª DIREC */}
             {/*2ª DIREC */}
                 {/*Arês */}
                 <a className="direc-2" type="button" data-bs-toggle="modal" data-bs-target="#ModalArez">
-                    <title>Arês</title>
+                    <title>Arês - 2ª Direc </title>
                     <path id="2401206" d="M-351108,-61869l-462,387l-185,-167l-448,-59l-778,95l124,-440l546,-370l287,196l525,46l391,312Z" strokeWidth="200" stroke="white"></path>
                 </a>
                 {/*Baia Formosa */}
                 <a className="direc-2" type="button" data-bs-toggle="modal" data-bs-target="#ModalBaiaFormosa">
-                    <title>Baia Formosa</title>
+                    <title>Baia Formosa - 2ª Direc</title>
                     <path id="2401404" d="M-349685,-64872l-64,676l-172,487l-275,52l-123,549l-358,-356l49,-156l-645,-500l172,-341l-24,-590l170,74l378,-301l292,223l600,183Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Canguaretama */}
                 <a className="direc-2" type="button" data-bs-toggle="modal" data-bs-target="#ModalCanguaretama">
-                    <title>Canguaretama</title>
+                    <title>Canguaretama - 2ª Direc</title>
                     <path id="2402204" d="M-350443,-62838l-112,-432l-619,-68l6,520l-285,-172l-221,-230l0,-320l-687,47l-361,-209l10,-20l490,-491l371,58l389,-1173l4,-200l333,477l24,590l-172,341l645,500l-49,156l358,356l-15,244l-109,26Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Goianinha */}
                 <a className="direc-2" type="button" data-bs-toggle="modal" data-bs-target="#ModalGoianinha">
-                    <title>Goianinha</title>
+                    <title>Goianinha - 2ª Direc</title>
                     <path id="2404200" d="M-351499,-62181l-525,-46l-287,-196l-546,370l190,-1190l-55,-459l361,209l687,-47l0,320l221,230l-101,313l55,496Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Monte Alegre */}
                 <a className="direc-2" type="button" data-bs-toggle="modal" data-bs-target="#ModalMonteAlegre">
-                    <title>Monte Alegre</title>
+                    <title>Monte Alegre - 2ª Direc</title>
                     <path id="2407807" d="M-353651,-60555l-643,50l-272,-280l-560,274l-328,-45l137,-360l661,-300l219,-190l302,82l321,-261l290,-235l263,412l274,687l-246,239l-418,-73Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Nísia Floresta */}
                 <a className="direc-2" type="button" data-bs-toggle="modal" data-bs-target="#ModalNisiaFloresta">
-                    <title>Nísia Floresta</title>
+                    <title>Nísia Floresta - 2ª Direc</title>
                     <path id="2408201" d="M-351210,-59817l-617,439l-293,30l-342,-194l171,-372l-84,-769l94,-51l78,-974l448,59l185,167l592,84l15,825l-247,756Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Parnamirim */}
                 <a className="direc-2" type="button" data-bs-toggle="modal" data-bs-target="#ModalParnamirim">
-                    <title>Parnamirim (SEDE)</title>
+                    <title>Parnamirim (SEDE) - 2ª Direc</title>
                     <path id="2403251" d="M-351541,-58978l-221,-20l-417,312l-645,188l-137,-1084l499,40l342,194l293,-30l617,-439l-320,347l-11,492Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*São José de Mipibu */}
                 <a className="direc-2" type="button" data-bs-toggle="modal" data-bs-target="#ModalSJoseMipibu">
-                    <title>São José de Mipibu</title>
+                    <title>São José de Mipibu - 2ª Direc</title>
                     <path id="2412203" d="M-352203,-61708l-78,974l-94,51l84,769l-171,372l-499,-40l-773,-292l-87,-344l170,-337l418,73l246,-239l-274,-687l-263,-412l130,-34l204,-56l333,-143l-124,440l778,-95Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Sen. Georgino Avelino */}
                 <a className="direc-2" type="button" data-bs-toggle="modal" data-bs-target="#ModalSAvelino">
-                    <title>Sen. Georgino Avelino</title>
+                    <title>Sen. Georgino Avelino - 2ª Direc</title>
                     <path id="2413201" d="M-350939,-61834l-39,436l-592,-84l462,-387l169,35Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Tibau do Sul */}
                 <a className="direc-2" type="button" data-bs-toggle="modal" data-bs-target="#ModalTibauSul">
-                    <title>Tibau do Sul</title>
+                    <title>Tibau do Sul - 2ª Direc </title>
                     <path id="2414209" d="M-350334,-62864l-26,510l-262,96l-317,424l-169,-35l-391,-312l-55,-496l101,-313l285,172l412,159l313,-179l109,-26Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Vera Cruz */}
                 <a className="direc-2" type="button" data-bs-toggle="modal" data-bs-target="#ModalVeraCruz">
-                    <title>Vera Cruz</title>
+                    <title>Vera Cruz - 2ª Direc</title>
                     <path id="2414803" d="M-353651,-60555l-170,337l87,344l-1733,-666l13,-16l328,45l560,-274l272,280l643,-50Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Vila Flor */}
                 <a className="direc-2" type="button" data-bs-toggle="modal" data-bs-target="#ModalVilaFlor">
-                    <title>Vila Flor</title>
+                    <title>Vila Flor - 2ª Direc</title>
                     <path id="2415008" d="M-350443,-62838l-313,179l-412,-159l-6,-520l619,68l112,432Z" strokeWidth="200" stroke="black"></path>
                 </a>
             {/*2ª DIREC */}
             {/*3ª DIREC */}
                 {/*Boa Saúde */}
                 <a className="direc-3" type="button" data-bs-toggle="modal" data-bs-target="#ModalBoaSaude">
-                    <title>Boa Saúde</title>
+                    <title>Boa Saúde - 3ª Direc</title>
                     <path id="2405306" d="M-355467,-60540l-110,72l-131,-327l-221,-160l-487,-405l-122,-412l-676,41l-192,-96l773,-152l33,-243l382,170l541,-5l173,58l187,1083l-137,360l-13,16Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Brejinho */}
                 <a className="direc-3" type="button" data-bs-toggle="modal" data-bs-target="#ModalBrejinho">
-                    <title>Brejinho</title>
+                    <title>Brejinho - 3ª Direc</title>
                     <path id="2401800" d="M-353499,-62249l105,395l-130,34l-290,235l-216,-518l-334,-431l155,-198l195,278l433,-44l82,249Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Espírito Santo */}
                 <a className="direc-3" type="button" data-bs-toggle="modal" data-bs-target="#ModalEspiritoSanto">
-                    <title>Espirito Santo</title>
+                    <title>Espirito Santo - 3ª Direc</title>
                     <path id="2403509" d="M-352722,-63702l55,459l-190,1190l-333,143l-42,-801l-190,-442l33,-658l293,-220l384,309l-10,20Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Jundiá */}
                 <a className="direc-3" type="button" data-bs-toggle="modal" data-bs-target="#ModalJundia">
-                    <title>Jundiá</title>
+                    <title>Jundiá - 3ª Direc</title>
                     <path id="2406155" d="M-353422,-63153l190,442l42,801l-204,56l-105,-395l-108,-830l185,-74Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Lagoa D'anta */}
                 <a className="direc-3" type="button" data-bs-toggle="modal" data-bs-target="#ModalLagoaDanta">
-                    <title>Lagoa D'anta</title>
+                    <title>Lagoa D'anta - 3ª Direc</title>
                     <path id="2406205" d="M-356432,-63258l-282,112l-116,-435l114,-571l1129,-157l145,135l-108,264l-420,52l-462,600Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Lagoa de Pedras */}
                 <a className="direc-3" type="button" data-bs-toggle="modal" data-bs-target="#ModalLagoaPedras">
-                    <title>Lagoa de Pedras</title>
+                    <title>Lagoa de Pedras - 3ª Direc</title>
                     <path id="2406304" d="M-353814,-61585l-321,261l-302,-82l-18,-135l-815,-472l-234,14l-173,-58l992,-250l321,-227l334,431l216,518Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Lagoa Salgada */}
                 <a className="direc-3" type="button" data-bs-toggle="modal" data-bs-target="#ModalLagoaSalgada">
-                    <title>Lagoa Salgada</title>
+                    <title>Lagoa Salgada - 3ª Direc</title>
                     <path id="2406601" d="M-354437,-61406l-219,190l-661,300l-187,-1083l234,-14l815,472l18,135Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Montanhas */}
                 <a className="direc-3" type="button" data-bs-toggle="modal" data-bs-target="#ModalMontanhas">
-                    <title>Montanhas</title>
+                    <title>Montanhas - 3ª Direc</title>
                     <path id="2407708" d="M-352244,-65216l-510,407l-38,324l-352,-11l-269,-890l667,-53l502,223Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Monte das Gameleiras */}
                 <a className="direc-3" type="button" data-bs-toggle="modal" data-bs-target="#ModalMonteGameleiras">
-                    <title>Monte das Gameleiras</title>
+                    <title>Monte das Gameleiras - 3ª Direc</title>
                     <path id="2407906" d="M-357733,-64828l86,642l-787,408l-112,-567l747,-488l66,5Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Nova Cruz */}
                 <a className="direc-3" type="button" data-bs-toggle="modal" data-bs-target="#ModalNovaCruz">
-                    <title>Nova Cruz (SEDE)</title>
+                    <title>Nova Cruz (SEDE) - 3ª Direc </title>
                     <path id="2408300" d="M-353096,-64031l-633,-24l-363,240l-379,-243l-705,-5l-266,-111l-145,-135l-227,-532l166,-77l524,150l703,-98l343,-30l433,-224l232,-266l269,890l48,465Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Passa e Fica */}
                 <a className="direc-3" type="button" data-bs-toggle="modal" data-bs-target="#ModalPassaFica">
-                    <title>Passa e Fica</title>
+                    <title>Passa e Fica - 3ª Direc</title>
                     <path id="2409100" d="M-355587,-64309l-1129,157l80,-316l268,-76l327,-48l227,-249l227,532Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Passagem */}
                 <a className="direc-3" type="button" data-bs-toggle="modal" data-bs-target="#ModalPassagem">
-                    <title>Passagem</title>
+                    <title>Passagem - 3ª Direc</title>
                     <path id="2409209" d="M-353885,-63228l304,730l-433,44l-195,-278l-45,-462l369,-34Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Pedro Velho */}
                 <a className="direc-3" type="button" data-bs-toggle="modal" data-bs-target="#ModalPedroVelho">
-                    <title>Pedro Velho</title>
+                    <title>Pedro Velho - 3ª Direc</title>
                     <path id="2409803" d="M-351458,-65528l-4,200l-389,1173l-371,-58l-490,491l-384,-309l-48,-465l352,11l38,-324l510,-407l304,-287l482,-25Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Santo Antônio */}
                 <a className="direc-3" type="button" data-bs-toggle="modal" data-bs-target="#ModalSantoAntonio">
-                    <title>Santo Antônio</title>
+                    <title>Santo Antônio - 3ª Direc</title>
                     <path id="2411502" d="M-353885,-63228l-369,34l45,462l-155,198l-321,227l-6,-429l-340,-241l-503,130l-898,-411l462,-600l420,-52l108,-264l266,111l705,5l379,243l207,587Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*São José do Campestre */}
                 <a className="direc-3" type="button" data-bs-toggle="modal" data-bs-target="#ModalSJoseCampestre">
-                    <title>São José do Campestre</title>
+                    <title>São José do Campestre - 3ª Direc</title>
                     <path id="2412302" d="M-357406,-61827l-228,-189l-407,-1174l-458,-432l-206,-6l271,-150l787,-408l817,605l116,435l282,-112l-232,868l64,168l-33,243l-773,152Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Serra de São Bento */}
                 <a className="direc-3" type="button" data-bs-toggle="modal" data-bs-target="#ModalSerraBento">
-                    <title>Serra de São Bento</title>
+                    <title>Serra de São Bento - 3ª Direc</title>
                     <path id="2413300" d="M-356636,-64468l-80,316l-114,571l-817,-605l-86,-642l661,133l436,227Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Serrinha */}
                 <a className="direc-3" type="button" data-bs-toggle="modal" data-bs-target="#ModalSerrinha">
-                    <title>Serrinha</title>
+                    <title>Serrinha - 3ª Direc</title>
                     <path id="2413508" d="M-355677,-62057l-541,5l-382,-170l-64,-168l232,-868l898,411l503,-130l340,241l6,429l-992,250Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Várzea */}
                 <a className="direc-3" type="button" data-bs-toggle="modal" data-bs-target="#ModalVarzea">
-                    <title>Várzea</title>
+                    <title>Várzea - 3ª Direc</title>
                     <path id="2414704" d="M-353422,-63153l-185,74l108,830l-82,-249l-304,-730l-207,-587l363,-240l633,24l-293,220l-33,658Z" strokeWidth="200" stroke="black"></path>
                 </a>
             {/*3ª DIREC */}
             {/*4ª DIREC */}
                 {/*Barcelona */}
                 <a className="direc-4" type="button" data-bs-toggle="modal" data-bs-target="#ModalBarcelona">
-                    <title>Barcelona</title>
+                    <title>Barcelona - 4ª Direc </title>
                     <path id="2401503" d="M-358511,-59133l-1156,120l40,-625l-141,-506l-550,-550l1070,588l900,635l-150,317l-13,21Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Bom Jesus */}
                 <a className="direc-4" type="button" data-bs-toggle="modal" data-bs-target="#ModalBomJesus">
-                    <title>Bom Jesus</title>
+                    <title>Bom Jesus - 4ª Direc </title>
                     <path id="2401701" d="M-355577,-60468l203,511l-348,634l-780,-441l27,-396l767,-635l131,327Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Caiçara do Rio do Vento */}
                 <a className="direc-4" type="button" data-bs-toggle="modal" data-bs-target="#ModalCaicaraRioVento">
-                    <title>Caiçara do Rio do Vento</title>
+                    <title>Caiçara do Rio do Vento - 4ª Direc </title>
                     <path id="2401909" d="M-359255,-58003l15,363l-156,310l54,181l-898,169l-385,427l-531,-1539l31,-330l471,-73l515,143l328,315l556,34Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Ielmo Marinho */}
                 <a className="direc-4" type="button" data-bs-toggle="modal" data-bs-target="#ModalIelmoMarinho">
-                    <title>Ielmo Marinho</title>
+                    <title>Ielmo Marinho - 4ª Direc </title>
                     <path id="2404606" d="M-354469,-57334l-113,156l-937,145l-58,-178l-741,67h-3l-242,-36l175,-720l443,-775l655,-143l400,506l174,-36l247,1014Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Lagoa de Velhos */}
                 <a className="direc-4" type="button" data-bs-toggle="modal" data-bs-target="#ModalLagoaVelhos">
-                    <title>Lagoa de Velhos</title>
+                    <title>Lagoa de Velhos - 4ª Direc </title>
                     <path id="2406403" d="M-358225,-60732l238,306l204,267l-565,688l-900,-635l1023,-626Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Riachuelo */}
                 <a className="direc-4" type="button" data-bs-toggle="modal" data-bs-target="#ModalRiachuelo">
-                    <title>Riachuelo</title>
+                    <title>Riachuelo - 4ª Direc</title>
                     <path id="2410900" d="M-357771,-57164l-1625,-166l156,-310l-15,-363l744,-1130l13,-21l171,66l359,555l172,381l25,988Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Ruy Barbosa */}
                 <a className="direc-4" type="button" data-bs-toggle="modal" data-bs-target="#ModalRuyBarbosa">
-                    <title>Ruy Barbosa</title>
+                    <title>Ruy Barbosa - 4ª Direc</title>
                     <path id="2411106" d="M-359255,-58003l-556,-34l-328,-315l472,-661l1156,-120l-744,1130Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Santa Maria */}
                 <a className="direc-4" type="button" data-bs-toggle="modal" data-bs-target="#ModalSantaMaria">
-                    <title>Santa Maria</title>
+                    <title>Santa Maria - 4ª Direc</title>
                     <path id="2409332" d="M-356388,-57900l-175,720l-1208,16l-25,-988l-172,-381l547,-190l589,33l153,747l291,43Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*São Paulo do Potengi */}
                 <a className="direc-4" type="button" data-bs-toggle="modal" data-bs-target="#ModalSPauloPotengi">
-                    <title>São Paulo do Potengi (SEDE)</title>
+                    <title>São Paulo do Potengi (SEDE) - 4ª Direc</title>
                     <path id="2412609" d="M-356832,-58690l-589,-33l-547,190l-359,-555l-171,-66l150,-317l565,-688l1099,320l-191,648l43,501Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*São Pedro */}
                 <a className="direc-4" type="button" data-bs-toggle="modal" data-bs-target="#ModalSaoPedro">
-                    <title> São Pedro</title>
+                    <title> São Pedro - 4ª Direc</title>
                     <path id="2412708" d="M-356388,-57900l-291,-43l-153,-747l-43,-501l191,-648l182,75l780,441l432,505l-655,143l-443,775Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*São Tomé */}
                 <a className="direc-4" type="button" data-bs-toggle="modal" data-bs-target="#ModalSaoTome">
-                    <title>São Tomé</title>
+                    <title>São Tomé - 4ª Direc</title>
                     <path id="2412906" d="M-360139,-58352l-515,-143l-471,73l-236,-217l-230,136l-538,-234l-113,-263l-572,-1440l-143,-782l389,-358l306,-61l10,207l1041,545l407,-131l486,326l550,550l141,506l-40,625l-472,661Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Sen. Elói de Souza */}
                 <a className="direc-4" type="button" data-bs-toggle="modal" data-bs-target="#ModalSEloiSouza">
-                    <title>Sen. Elói de Souza</title>
+                    <title>Sen. Elói de Souza - 4ª Direc</title>
                     <path id="2413102" d="M-355708,-60795l-767,635l-27,396l-182,-75l-1099,-320l-204,-267l170,19l600,-337l353,13l935,-224l221,160Z" strokeWidth="200" stroke="black"></path>
                 </a>
                 {/*Serra Caiada */}
                 <a className="direc-4" type="button" data-bs-toggle="modal" data-bs-target="#ModalSerraCaiada">
-                    <title>Serra Caiada</title>
+                    <title>Serra Caiada - 4ª Direc</title>
                     <path id="2410306" d="M-355929,-60955l-935,224l-353,-13l-600,337l-170,-19l-238,-306l-7,-12l24,-550l126,-103l759,-28l109,-306l676,-41l122,412l487,405Z" strokeWidth="200" stroke="black"></path>
                 </a>
             {/*4ª DIREC */}
@@ -873,11 +920,30 @@ const MapComponent = (props) => {
                 </a>
             {/*16ª DIREC */}
         </g>   
-    </svg>     
+    </svg>   
 
+        <MapLegendContainer>
+            <MapLegendSubContainer>
+                <Title>Legenda</Title>
+            </MapLegendSubContainer>
+            <MapLegendSubContainer>
+            {numbers.map( 
+                (number) => 
+                <MapLegendItem>
+                    <MapLegendColor className={"direc"+number}/>
+                    <MapLegendText>
+                        {number}ª Direc
+                    </MapLegendText>
+                </MapLegendItem>
+            )}
+            </MapLegendSubContainer>
+        </MapLegendContainer>
+
+    </>
 
     
-   );    
+   );  
+  
 };
 
-export default MapComponent;
+export default MapSVG;

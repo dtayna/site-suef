@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import MapSVG from '../components/map-svg';
+import Map from '../components/map';
 
 const Mapa = () => {
   return(
         <div>
-            <MapSVG/>
+            <Map/>
         </div>
   );
 }

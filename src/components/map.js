@@ -5,7 +5,7 @@ import MapGraph from './map-graph';
 import Popup from './popup';
 import React, { useState } from 'react';
 import { SuperTitle } from './global-components';
-import MapComponent from '../assets/map-component';
+import MapSVG from '../assets/map-svg';
 
 //mapa component: onClick={() => props.activatePopup("natal")}
 
@@ -19,7 +19,7 @@ const Container = styled.div`
 `;
 
 
-export const MapSVG = () => {
+export const Map = () => {
 
 function activatePopup (cidade, quantidades) {
     setCity(cidade);
@@ -78,7 +78,7 @@ const [data, setData] = useState({
     return(
     <Container>
       <SuperTitle color="var(--mainColor1)">Ensino Fundamental no Rio Grande do Norte</SuperTitle>
-      <MapComponent activatePopup={activatePopup}></MapComponent>
+      <MapSVG activatePopup={activatePopup}></MapSVG>
       <MapGraph desactivatePopup={desactivatePopup} chartData={data} city={city} active={active}/>
     </Container>
     );
@@ -86,4 +86,4 @@ const [data, setData] = useState({
 
 
   
-  export default MapSVG;
+  export default Map;

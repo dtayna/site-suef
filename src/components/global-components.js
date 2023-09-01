@@ -120,7 +120,6 @@ export const Title = styled.h2`
 export const SuperTitle = styled.h1`
     color: ${props => props.color ? props.color : 'var(--colorTitle)'};
     textAlign: center ;
-   
 `;
 
 export const Icon = styled.div`

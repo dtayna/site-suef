@@ -7,6 +7,10 @@
     min-width: 350px;
     }
   
+  .direc1 {
+    background-color:teal ;
+  }
+
   .direc-1 path {
     fill:teal !important;
   }
@@ -14,6 +18,10 @@
     fill:rgb(0, 182, 182) !important;
   }
   
+  .direc2{
+    background-color:crimson  ;
+  }
+
   .direc-2 path {
     fill:crimson !important;
   }
@@ -21,13 +29,21 @@
     fill:rgb(245, 70, 105) !important;
   }
   
+  .direc3{
+    background-color:aquamarine ;
+  }
+
   .direc-3 path {
     fill:aquamarine !important;
   }
   .direc-3:hover path {
-    fill:rgb(20, 255, 255) !important;
+    fill:rgb(61, 150, 150) !important;
   }
   
+  .direc4{
+    background-color: olive;
+  }
+
   .direc-4 path {
     fill:olive !important;
   }
@@ -35,6 +51,10 @@
     fill:rgb(167, 167, 65) !important;
   }
   
+  .direc5{
+    background-color: rgb(255, 255, 90);
+  }
+
   .direc-5 path {
     fill:rgb(255, 255, 90) !important;
   }
@@ -42,6 +62,10 @@
     fill:rgb(255, 255, 180) !important;
   }
   
+  .direc6{
+    background-color: darkslateblue;
+  }
+
   .direc-6 path {
     fill:darkslateblue !important;
   }
@@ -49,6 +73,10 @@
     fill:rgb(125, 100, 230) !important;
   }
   
+  .direc7{
+    background-color: tomato;
+  }
+
   .direc-7 path {
     fill:tomato !important;
   }
@@ -56,13 +84,21 @@
     fill:rgb(255, 150, 135) !important;
   }
   
+  .direc8{
+    background-color: cadetblue;
+  }
+
   .direc-8 path {
     fill:cadetblue !important;
   }
   .direc-8:hover path {
-    fill:rgb(150, 255, 255) !important;
+    fill:rgb(169, 226, 226) !important;
   }
   
+  .direc9{
+    background-color: chartreuse;
+  }
+
   .direc-9 path {
     fill:chartreuse !important;
   }
@@ -70,6 +106,10 @@
     fill:rgb(185, 255, 110) !important;
   }
   
+  .direc10{
+    background-color: dodgerblue; 
+  }
+
   .direc-10 path {
     fill:dodgerblue !important;
   }
@@ -77,6 +117,10 @@
     fill:rgb(140, 195, 255) !important;
   }
   
+  .direc11{
+    background-color: red;
+  }
+
   .direc-11 path {
     fill:red !important;
   }
@@ -84,6 +128,10 @@
     fill:rgb(255, 70, 70) !important;
   }
   
+  .direc12{
+    background-color: yellow;
+  }
+
   .direc-12 path {
     fill:yellow !important;
   }
@@ -91,6 +139,10 @@
     fill:rgb(255, 255, 180) !important;
   }
   
+  .direc13{
+    background-color: orange;
+  }
+
   .direc-13 path {
     fill:orange !important;
   }
@@ -98,13 +150,22 @@
     fill:rgb(255, 200, 100) !important;
   }
   
+  .direc14{
+    border: var(--lightBorder);
+    background-color: white;
+  }
+
   .direc-14 path {
     fill:white !important;
   }
   .direc-14:hover path {
     fill:rgb(215, 215, 215) !important;
   }
-  
+
+  .direc15{
+    background-color: green;
+  }
+
   .direc-15 path {
     fill:green !important;
   }
@@ -112,6 +173,10 @@
     fill:rgb(70, 170, 70) !important;
   }
   
+  .direc16{
+    background-color: rgb(0, 30, 80);
+  }
+
   .direc-16 path {
     fill: rgb(0, 30, 80) !important;
   }
