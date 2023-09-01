@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Line } from './global-components';
+import React, { useState } from 'react';
 
 const DivTitle = styled.div`   
     box-shadow: inset 0px -150px 50px rgb(0 0 0 / 80%);
@@ -33,10 +34,11 @@ const SubTitle = styled.p`
 const Title = styled.p`
     margin: 0px 0px 5px 0px;  
     text-align: left;
-    font-size: 40px;
+    font-size: 2em;
     font-weight: bold;
     color: white;
     opacity : 1;
+    text-wrap: wrap;
 `;
 
 // text-shadow: 1px 2px 3px #000;
@@ -48,7 +50,7 @@ const DivText = styled.div`
 const Container = styled.div`
     min-width: 250px;
     width: 500px;
-    background-color: var(--mainColor2);
+    background-color:  ${props => props.backgroundcolor? props.backgroundcolor : "white"};
     max-width: 500px;
     border-radius: 5px;
     margin: 30px;
@@ -62,11 +64,19 @@ const Container = styled.div`
     
 `; 
 
+let bgcolor = "white";
+
 const  EventCard = (props) => {
+
+    if (props.tipo =="FORMAÇÃO"){
+        bgcolor = "var(--mainColor1)";
+    }else if(props.tipo == "EVENTO"){
+        bgcolor = "var(--mainColor2)";
+    }
+
     return( 
         <>
-        
-        <Container>
+        <Container backgroundcolor={bgcolor}>
             <DivTitle>
             <Title>{props.title}</Title>
             <SubTitle>{props.tipo}</SubTitle>
@@ -75,9 +85,7 @@ const  EventCard = (props) => {
                <Text fontFamily={"'Montserrat',sans-serif"} color={"white"}>{props.resume}</Text>
             </DivText>
         </Container>
-        
-        </>
-          
+        </>  
     );
   }
   
