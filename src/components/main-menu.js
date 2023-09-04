@@ -57,7 +57,7 @@ const MainMenu = () => {
           <Link className="links" to="/eventos">
           <ItemDesktop  itemcolor={"var(--yellow)"}>EVENTOS</ItemDesktop>
           </Link>
-          <ItemDesktop  itemcolor={"var(--green)"}>CONTATOS</ItemDesktop>
+          <ItemDesktop  itemcolor={"var(--green)"}>DÚVIDAS</ItemDesktop>
           <ItemDesktop  itemcolor={"var(--blue)"}>DOCUMENTOS</ItemDesktop>
           <ItemDesktop  itemcolor={"var(--red)"}>PROJETOS</ItemDesktop>
           <Link className="links" to="/equipe">

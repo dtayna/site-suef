@@ -9,7 +9,7 @@ const DivTitle = styled.div`
     flex-direction: column;
     justify-content:end; 
     margin: 0;
-    padding: 20px;
+    padding: 30px;
     background: lightblue url("../imagemteste.jpg") no-repeat center;
     border-radius: 5px 5px 0px 0px;
 `;
@@ -44,7 +44,7 @@ const Title = styled.p`
 // text-shadow: 1px 2px 3px #000;
 
 const DivText = styled.div`
-    padding: 20px 30px 30px 30px;
+    padding: 15px 30px 30px 30px;
 `;
 
 const Container = styled.div`
@@ -53,7 +53,7 @@ const Container = styled.div`
     background-color:  ${props => props.backgroundcolor? props.backgroundcolor : "white"};
     max-width: 500px;
     border-radius: 5px;
-    margin: 30px;
+    margin: 0px 25px 30px 25px;
     box-shadow: var(--grayBoxShadow);
     transition-duration: 0.5s, 0.5s;
 

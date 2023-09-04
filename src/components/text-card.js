@@ -4,7 +4,7 @@ import { Text , Line } from './global-components';
 const DivTitle = styled.div`
     margin: 0;
     padding: 20px;
-    background-color: var(--mainColor2);
+    background-color: var(--mainColor1);
     border-radius: 5px 5px 0px 0px;
 `;
 

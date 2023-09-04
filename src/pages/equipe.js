@@ -4,9 +4,7 @@ import { SuperTitle } from '../components/global-components';
 
 const Equipe = () => {
   return(
-        <div> 
           <TeamRoster/>
-        </div>
   );
 }
 export default Equipe;

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import TextCard from '../components/text-card';
+import { SuperTitle } from '../components/global-components';
 
 const ContainerQuadros = styled.section`
   display: flex;
@@ -13,6 +14,7 @@ const ContainerQuadros = styled.section`
 `;
 
 const ContainerCol = styled.div`
+margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,9 +22,20 @@ const ContainerCol = styled.div`
 
 `;
 
+const Container = styled.div`
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+
+`;
+
 const QuadrosInstitucionais = () => {
   return(
+        <Container>
+        <SuperTitle color={"var(--mainColor1)"}> Conheça a Subcoordenadoria do Ensino Fundamental do RN!</SuperTitle>
+ 
         <ContainerQuadros>
+         
           <ContainerCol>
             <TextCard
               tipo={"primario"}
@@ -33,7 +46,7 @@ const QuadrosInstitucionais = () => {
             </ContainerCol>
             <ContainerCol>
             <TextCard
-              tipo={"primari"}
+              tipo={"primario"}
               primeiro={false}
               title={"MISSÃO"} 
               text={"Assegurar uma educação que garanta o acesso, a permanência e o suceso dos estudantes."}
@@ -46,6 +59,7 @@ const QuadrosInstitucionais = () => {
             />
             </ContainerCol>
         </ContainerQuadros>
+        </Container>
   );
 }
 export default QuadrosInstitucionais;

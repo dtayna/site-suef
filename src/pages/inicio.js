@@ -5,6 +5,8 @@ import Carousel from '../components/carousel'
 const Inicio = () => {
   return(
         <div>   
+          <Carousel/>
+          <br></br>
           <QuadrosInstitucionais/> 
         </div>
   );
