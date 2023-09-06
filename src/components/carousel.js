@@ -40,6 +40,12 @@ const Title = styled.p`
     color: white;
     opacity : 1;
     text-wrap: wrap;
+    transition-duration: 0.7s, 0.7s;
+
+    &:hover {
+        transform: scale(1.1);
+        transition-duration: 0.7s, 0.7s;
+    }
 
     @media screen and (max-width: 734px) {
         font-size: 4em;

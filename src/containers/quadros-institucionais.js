@@ -7,14 +7,16 @@ const ContainerQuadros = styled.section`
   justify-content: center;
   align-items: start;
   flex-direction: row;
-
+  margin-top: 20px;
+  
   @media screen and (max-width: 734px) {
+    margin-top: 0px;
     flex-direction: column;
   }
 `;
 
 const ContainerCol = styled.div`
-margin-top: 50px;
+
   display: flex;
   justify-content: center;
   align-items: center;

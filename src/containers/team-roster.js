@@ -11,7 +11,7 @@ const TeamRoster = () => {
   return(
         <Container>
             <SuperTitle color="var(--mainColor1)">Conheça nossa Equipe!</SuperTitle>
-            <Col gap="40px" padding="50px">
+            <Col gap="40px" padding="20px">
                 <Row gap="20px">
                     <ProfileCard/>
                     <ProfileCard/>
