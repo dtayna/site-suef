@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import React, { useState , useEffect} from 'react';
+import ReactDOM from 'react-dom';
 import { Link, BrowserRouter } from 'react-router-dom';
 import { CgMenu } from 'react-icons/cg';
 import { BlockDesktop , BlockTabletSmartphone } from './global-components';
@@ -42,7 +44,50 @@ const IconSmartphone = styled.div`
   justify-content: center;
 `;
 
-const MainMenu = () => {
+const MenuExpandido = styled.div`
+  background-color: var(--mainColor1);
+  color: white;
+  padding: 10px 30px 10px 30px;
+  display: ${props => props.clicado ? props.clicado : "none"};
+  
+  @media screen and (min-width: 930px) {
+   display: none;
+  }
+`;
+
+const ItemSmartphone = styled.div`
+  font-size: 1.2em;
+  min-width: 90px;
+  text-align: center;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+  color: white;
+  padding: 15px 20px 20px 20px;
+`;
+
+const ItemSmartphone2 = styled.div`
+  font-size: 1.2em;
+  min-width: 90px;
+  text-align: center;
+  color: white;
+  padding: 15px 20px 20px 20px;
+`;
+
+const MainMenu = (props) => {
+
+
+  function expandMenu() {
+    if (click=="none"){
+      console.log("cheguei aqui");
+      setClick("block");
+    }else{
+      setClick("none");
+    }
+  }
+
+  const [click,setClick] = useState("none");
+
   return(
     <>
     <BlockDesktop>
@@ -69,11 +114,20 @@ const MainMenu = () => {
 
     <BlockTabletSmartphone>
       <ContainerSmartphone>
-        <IconSmartphone>
+        <IconSmartphone onClick={expandMenu}>
           <CgMenu/>
         </IconSmartphone>
       </ContainerSmartphone>
     </BlockTabletSmartphone>
+    <MenuExpandido clicado={click}>
+      <ItemSmartphone>Início</ItemSmartphone>
+      <ItemSmartphone>Mapa</ItemSmartphone>
+      <ItemSmartphone>Eventos</ItemSmartphone>
+      <ItemSmartphone>Dúvidas</ItemSmartphone>
+      <ItemSmartphone>Documentos</ItemSmartphone>
+      <ItemSmartphone>Projetos</ItemSmartphone>
+      <ItemSmartphone2>Equipe</ItemSmartphone2>
+    </MenuExpandido>
     </>
     
   );

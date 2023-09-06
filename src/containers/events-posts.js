@@ -5,7 +5,7 @@ import { Row, Col, SuperTitle } from '../components/global-components';
 const EventsPosts= () => {
   return(
         <Col gap="40px" padding="50px">
-          <SuperTitle color={"var(--mainColor1)"}>Acompanhe os ultimos eventos realizados pela SUEF!</SuperTitle>
+          <SuperTitle color={"var(--mainColor1)"}>Acompanhe os últimos eventos realizados pela SUEF!</SuperTitle>
             <Row gap="20px">
             <EventCard
              tipo={"FORMAÇÃO"}

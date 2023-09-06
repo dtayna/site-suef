@@ -2,13 +2,12 @@ import styled from 'styled-components';
 import TextCard from '../components/text-card';
 import { SuperTitle } from '../components/global-components';
 
+
 const ContainerQuadros = styled.section`
   display: flex;
   justify-content: center;
   align-items: start;
   flex-direction: row;
-  margin-top: 20px;
-  
   @media screen and (max-width: 734px) {
     margin-top: 0px;
     flex-direction: column;
@@ -16,7 +15,6 @@ const ContainerQuadros = styled.section`
 `;
 
 const ContainerCol = styled.div`
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +23,8 @@ const ContainerCol = styled.div`
 `;
 
 const Container = styled.div`
-  margin-top: 150px;
+  margin-top: 100px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
 
