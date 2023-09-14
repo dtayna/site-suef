@@ -16,9 +16,16 @@ const Container = styled.nav`
   background-color: var(--mainColor1);
 `;
   
+const Fix = styled.div`
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 289;
+`;
 
 const AccessibilityMenu = () => {
     return(
+      <Fix>
       <Container>
         <Item>
           <Icon>
@@ -47,6 +54,7 @@ const AccessibilityMenu = () => {
           </Icon>
         </Item>
       </Container>
+      </Fix>
     );
   }
 

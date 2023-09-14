@@ -3,10 +3,12 @@ import MainMenu from '../components/main-menu';
 import AccessibilityMenu from '../components/accessibility-menu';
 import UrlLogoRN from '../assets/svg/brasaoRN.svg';
 import UrlLogoAcessoAInformacao from '../assets/acessoainformacao.png';
+import BackToTopButton from '../components/back-to-top-button';
 
 // Antiga cor do header background-color: #F0FFF0;
 
 const ImagensContainer = styled.div`
+    margin-top: 40px;
     gap: 30px;
     display: flex;
     justify-content: right;
@@ -73,7 +75,9 @@ const Header = () => {
                 <LogoRN src={UrlLogoRN}/>
             </ImagensContainer>
             <MainMenu/>
+            <BackToTopButton/>
         </HeaderContainer>
+        
     );
   }
   

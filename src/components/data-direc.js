@@ -3,11 +3,10 @@ import { Title, SubTitle, Text, Line } from './global-components'
 
 const Container = styled.div`
     width: 550px;
-    padding: 10px;
     text-align: left;
 
     @media screen and (max-width: 734px) {
-        width: 90%;
+        width: 95%;
     }
 `;
   

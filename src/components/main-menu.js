@@ -102,7 +102,7 @@ const MainMenu = (props) => {
           <Link className="links" to="/eventos">
           <ItemDesktop  itemcolor={"var(--yellow)"}>EVENTOS</ItemDesktop>
           </Link>
-          <ItemDesktop  itemcolor={"var(--green)"}>DÚVIDAS</ItemDesktop>
+          <Link className="links" to="/duvidas"><ItemDesktop  itemcolor={"var(--green)"}>DÚVIDAS</ItemDesktop></Link>
           <ItemDesktop  itemcolor={"var(--blue)"}>DOCUMENTOS</ItemDesktop>
           <ItemDesktop  itemcolor={"var(--red)"}>PROJETOS</ItemDesktop>
           <Link className="links" to="/equipe">

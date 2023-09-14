@@ -15,13 +15,13 @@ const MapLegendItem = styled.div`
 `;
 const MapLegendColor = styled.div`
     display block;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
 `;
 const MapLegendText = styled.p`
-    font-style: italic;
+    font-weight: bold;
     font-size: 15px;
-    color: var(--textColor);
+    color: var(--colorTitle);
 `;
 
 const MapLegendContainer = styled.div`
@@ -31,7 +31,7 @@ const MapLegendContainer = styled.div`
     max-width: 1000px;
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 10px;
     justify-content: center;
     align-items: center;
 `;
@@ -924,7 +924,6 @@ const MapSVG = (props) => {
 
         <MapLegendContainer>
             <MapLegendSubContainer>
-                <Title>Legenda</Title>
             </MapLegendSubContainer>
             <MapLegendSubContainer>
             {numbers.map( 

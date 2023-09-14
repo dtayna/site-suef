@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 
 
 const Container = styled.div`
-    padding: 5%;
+    padding-top: 30px;
 `;
 
 
@@ -30,7 +30,8 @@ const list = jsonDirecs.direcs.map(direc =>
 
   return(
       <Container>
-          <SuperTitle color={"var(--mainColor1)"}>Diretorias Regionais</SuperTitle>
+            <SuperTitle color={"var(--mainColor1)"}>Diretorias Regionais de Educação e Cultura</SuperTitle>
+            <br/>
         <Row>
             {list} 
         </Row>
