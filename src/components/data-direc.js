@@ -2,8 +2,13 @@ import styled from 'styled-components';
 import { Title, SubTitle, Text, Line } from './global-components'
 
 const Container = styled.div`
-  padding: 10px;
-  text-align: left;
+    width: 550px;
+    padding: 10px;
+    text-align: left;
+
+    @media screen and (max-width: 734px) {
+        width: 90%;
+    }
 `;
   
 
@@ -15,8 +20,8 @@ const DataDirec = ({direc, diretor, local, email, telefones}) => {
         <br/><br/>
         <SubTitle color={"var(--colorTitle)"}> {diretor} </SubTitle>
         <Text> {local} </Text>
-        <Text> {email} </Text>
-        <Text> {telefones}</Text>
+        <Text> Email: {email} </Text>
+        <Text> Telefones: {telefones}</Text>
       </Container>
     );
   }

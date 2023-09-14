@@ -1,0 +1,120 @@
+{
+    "direcs":
+        [
+            {
+                "titulo": "1ª Direc - Natal",
+                "diretor": "Jarbas Brito de Araújo - Diretor",
+                "localizacao":"Centro Administrativo do Governo do Estado - Bl. I - Térreo - Lagoa Nova CEP: 59064-901 - Natal/RN",
+                "email":"1dired@rn.gov.br",
+                "telefones":"3232-7448 / 7649 / 2745 / 4248 / 7455 / 7648 / 7450 (FAX)"
+            },
+            {
+                "titulo": "2ª Direc - Parnamirim",
+                "diretor": "Alcione Flávia F. das Oliveiras - Diretora",
+                "localizacao":"Rua Tenente Osório, 115 - Santos Reis CEP: 59150-000 - Parnamirim/RN",
+                "email":"2dired@rn.gov.br / 2dired@uol.com.br",
+                "telefones":"3418-6419 / 3644-6409 / 3644-6418"
+            },
+            {
+                "titulo": "3ª Direc - Nova Cruz",
+                "diretor": "Marcelo Júnior de Assis da Silva - Diretor",
+                "localizacao":"Rua Pedro Maurício Tavares, s/n - Frei Damião CEP: 59215-000 - Nova Cruz/RN",
+                "email":"3dired@rn.gov.br / 3dirednovacruz@gmail.com",
+                "telefones":"3281-5904 FAX 3281-5900"
+            },
+
+            {
+                "titulo": "4ª Direc - São Paulo do Potengi",
+                "diretor": "Marcia Maria Bezerra Soares - Diretora",
+                "localizacao":"Av. General Dantas, 422 - Centro CEP: 59460-000 - São Paulo do Potengi/RN",
+                "email":"4dired@rn.gov.br",
+                "telefones":" 3251-4967 / 4968 FAX 3251-3062"
+            },
+            {
+                "titulo": "5ª Direc - Ceará-Mirim",
+                "diretor": "Agenor Florêncio Costa Neto - Diretor",
+                "localizacao":"Av. Luiz Lopes Varela, 1125 CEP: 59570-000 - Ceará Mirim/RN",
+                "email":"5dired@rn.gov.br",
+                "telefones":" 3274-5996 FAX 3274-5987"
+            },
+            {
+                "titulo": "6ª Direc - Macau",
+                "diretor": "Patrícia Carol Rodrigues de Melo - Diretora",
+                "localizacao":"Rua Vereador Péricles Coimbra, 157 - Centro CEP: 59500-000 - Macau/RN",
+                "email":"6dired@rn.gov.br",
+                "telefones":"3521- 6455 FAX 3521-6452"
+            },
+            {
+                "titulo": "7ª Direc - Santa Cruz",
+                "diretor": "Meirison Fernandes de Farias - Diretor",
+                "localizacao":"Rua Ministro Mário Andreazza, 35 - Conj. Augusto Fernandes Pereira CEP: 59200-000 - Santa Cruz/RN",
+                "email":"7dired@rn.gov.br / setima.dired@yahoo.com.br / setima.dired@gmail.com",
+                "telefones":"3291-6918 / 6921 FAX 3291-6919"
+            },
+            {
+                "titulo": "8ª Direc - Angicos",
+                "diretor": "Francisca das Chagas Marileide Matias da Silva - Diretora",
+                "localizacao":"Rua Aristófanes Fernandes, s/n - Alto Triângulo CEP: 59515-000 - Angicos/RN",
+                "email":" 8dired@rn.gov.br / oitavadired@hotmail.com",
+                "telefones":"3531-3916 FAX 3531-3917/9993-1067"
+            },
+            {
+                "titulo": "9ª Direc - Currais Novos",
+                "diretor": "Agnaldo Cassiano de Brito - Diretor",
+                "localizacao":"Rua Des. Tomaz Salustino, 50 - Centro CEP: 59380-000 - Currais Novos/RN",
+                "email":"9dired@rn.gov.br / 9diredcn@gmail.com",
+                "telefones":"3405-3330 FAX 3405-3331"
+            },
+            {
+                "titulo": "10ª Direc - Caicó",
+                "diretor": "Suenyra Nóbrega Soares - Diretora",
+                "localizacao":"Rua Mons. Severiano, 150 - Penedo CEP: 59300-000 - Caicó/RN",
+                "email":"10dired@rn.gov.br / dired.caico2013@gmail.com",
+                "telefones":"3421-6046 / 6061 / 6062 FAX 3421-6060"
+            },
+            {
+                "titulo": "11ª Direc - Assú",
+                "diretor": "Maria Aldeíza da Silva - Diretora",
+                "localizacao":"Praça Getúlio Vargas, 163 - 1º andar - Centro CEP: 59650-000 - Assú/RN",
+                "email":"11dired@rn.gov.br",
+                "telefones":"3331-2724 FAX 3331-6527"
+            },
+            {
+                "titulo": "12ª Direc - Mossoró",
+                "diretor": "Ana Maria Morais Costa  - Diretora",
+                "localizacao":"Rua Cunha da Mota, 10 - Centro CEP: 59600-160 - Mossoró/RN",
+                "email":"12direc@rn.gov.br / 12dired@rn.gov.br / dired.mossoro@gmail.com",
+                "telefones":"3315-5668 / 5669 / 5671 / 5672 / 5670 / 3314-4268 / 3314-4587 (FAX)"
+            },
+            {
+                "titulo": "13ª Direc - Apodí",
+                "diretor": "Lusia Gomes Pinto  - Diretora",
+                "localizacao":"Rua Manoel Nogueira, 550 - Centro CEP: 59700-000 - Apodí/RN",
+                "email":"13dired@rn.gov.br",
+                "telefones":"3333-2181 / 2274 FAX 3333-2353"
+            },
+            {
+                "titulo": "14ª Direc - Umarizal",
+                "diretor": "Francisco Leopoldo Nunes - Diretor",
+                "localizacao":"Rua João Abílio, 01 - Centro CEP: 59865-000 - Umarizal/RN",
+                "email":"14dired@rn.gov.br / dired.umarizal@gmail.com",
+                "telefones":"3397-2319 FAX 3397-2597"
+            },
+            {
+                "titulo": "15ª Direc - Pau dos Ferros",
+                "diretor": "Maria Aparecida Vieira Diógenes - Diretora",
+                "localizacao":"Tv. Joaquim de Holanda, 19 - São Judas Tadeu CEP: 59900-000 - Pau dos Ferros/RN",
+                "email":"15dired@rn.gov.br / pedagogicodired@hotmail.com Blog: 15dired.blogspot.com",
+                "telefones":"3351-2125(Direção) 3361(Pedag) 3010(Funcion) 3084(Fin Escola) 3560(Fin DIRED) FAX 3351-2413"
+            },
+            {
+                "titulo": "16ª Direc - João Câmara",
+                "diretor": "Romeyka Priscila de Andrade Pereira - Diretora",
+                "localizacao":"Rua 29 de Outubro, 204 - Centro CEP: 59550-000 - João Câmara/RN",
+                "email":"16dired@rn.gov.br / dired.joaocamara@gmail.com",
+                "telefones":"3262-3038 FAX 3262-3963"
+            }
+
+
+        ]
+}
