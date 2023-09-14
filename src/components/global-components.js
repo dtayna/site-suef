@@ -127,6 +127,12 @@ export const Icon = styled.div`
     color: white;
 `;
 
+export const SubTitle = styled.h5`
+    font-size: 1.0em;
+    color: ${props => props.color ? props.color : 'var(--colorSubtitle)'};
+    margin-top: -20px;
+`;
+
 export const Line = styled.hr`
     width: ${props => props.linewidth ? props.linewidth : "90%"};
     margin-top: ${props => props.linemargintop ? props.linemargintop : "15px"};

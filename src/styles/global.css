@@ -3,11 +3,12 @@
     --pink:#C65F9E;
     --yellow: #FFAB08;
     --green: #B9C73A;
-    --blue: #57C1F2;
+    --blue: hsl(199, 86%, 65%);
     --red: #FC6E3D; 
+    --roxo: #412060;
 
-    --mainColor1: #003453;
-    --mainColor2:#FC6E3D; 
+    --mainColor1: #412060;
+    --mainColor2: #FC6E3D; 
 
     --colorTitle: #4F4F4F;
     --colorSubtitle: #A9A9A9;

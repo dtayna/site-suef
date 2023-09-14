@@ -13,8 +13,9 @@ const Container = styled.nav`
   display: flex;
   justify-content: right;
   padding-right: 5%;
-  background-color: var(--mainColor1)
+  background-color: var(--mainColor1);
 `;
+  
 
 const AccessibilityMenu = () => {
     return(

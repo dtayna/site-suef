@@ -94,7 +94,7 @@ const MainMenu = (props) => {
       <ContainerDesktop>
         <BrowserRouter >
           <Link className="links" to="/">
-            <ItemDesktop itemcolor={"var(--darkblue)"}>INÍCIO</ItemDesktop>
+            <ItemDesktop itemcolor={"var(--mainColor1)"}>INÍCIO</ItemDesktop>
           </Link>
           <Link className="links" to="/mapa">
             <ItemDesktop  itemcolor={"var(--pink)"}>MAPA</ItemDesktop>
@@ -106,7 +106,7 @@ const MainMenu = (props) => {
           <ItemDesktop  itemcolor={"var(--blue)"}>DOCUMENTOS</ItemDesktop>
           <ItemDesktop  itemcolor={"var(--red)"}>PROJETOS</ItemDesktop>
           <Link className="links" to="/equipe">
-            <ItemDesktop  itemcolor={"var(--darkblue)"}>EQUIPE</ItemDesktop>
+            <ItemDesktop  itemcolor={"var(--mainColor1)"}>EQUIPE</ItemDesktop>
           </Link>
         </BrowserRouter>
       </ContainerDesktop>
@@ -119,15 +119,27 @@ const MainMenu = (props) => {
         </IconSmartphone>
       </ContainerSmartphone>
     </BlockTabletSmartphone>
+
     <MenuExpandido clicado={click}>
-      <ItemSmartphone>Início</ItemSmartphone>
-      <ItemSmartphone>Mapa</ItemSmartphone>
-      <ItemSmartphone>Eventos</ItemSmartphone>
+    <BrowserRouter>
+      <Link className="links" to="/">
+        <ItemSmartphone>Início</ItemSmartphone>
+      </Link>
+      <Link className="links" to="/mapa">
+        <ItemSmartphone>Mapa</ItemSmartphone>
+      </Link>
+      <Link className="links" to="/eventos">
+        <ItemSmartphone>Eventos</ItemSmartphone>
+      </Link>
       <ItemSmartphone>Dúvidas</ItemSmartphone>
       <ItemSmartphone>Documentos</ItemSmartphone>
       <ItemSmartphone>Projetos</ItemSmartphone>
-      <ItemSmartphone2>Equipe</ItemSmartphone2>
+      <Link className="links" to="/equipe">
+        <ItemSmartphone2>Equipe</ItemSmartphone2>
+      </Link>
+      </BrowserRouter>
     </MenuExpandido>
+    
     </>
     
   );
