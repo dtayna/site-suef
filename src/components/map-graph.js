@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import '../styles/global.css';
 import { MdClose , MdOutlineArrowForward } from 'react-icons/md';
 import { Bar } from "react-chartjs-2";
 import { Chart } from 'chart.js/auto';
-import { IconClose , Title , Link } from './global-components';
+import { Link } from 'react-router-dom';
+import { LinkGraph, IconClose , Title, SubTitle } from './global-components';
 import React, { useState } from 'react';
 
 const Container = styled.div`
@@ -33,7 +33,9 @@ export const MapGraph = ({ chartData , city , active , desactivatePopup }) => {
       <Title color={'var(--mainColor1)'}>
         Matrículas em {city}
       </Title>
-      <Link href="https://saogoncalo.rn.gov.br/"> {city} <MdOutlineArrowForward/> </Link>
+         <LinkGraph> 
+            <Link to={"/indicadores?cidade="+city}> {city} <MdOutlineArrowForward/> </Link>
+         </LinkGraph>
       <Bar
         data={chartData}
         options={{

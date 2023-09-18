@@ -112,6 +112,13 @@ export const Link = styled.a`
     font-size: 14px;
 `;
 
+export const LinkGraph = styled.a`
+    color: ${props => props.color ? props.color : 'var(--colorSubtitle)'};
+    font-family: ${props => props.fontFamily ? props.fontFamily : 'inherit'};
+    text-decoration: underline var(--colorSubtitle);
+    font-size: 14px;
+`;
+
 
 export const Title = styled.h2`
     color: ${props => props.color ? props.color : 'var(--colorTitle)'};

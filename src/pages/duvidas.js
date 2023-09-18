@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import TeamRoster from '../containers/team-roster';
 import { SuperTitle , Col, Row } from '../components/global-components';
 import FaqItem from '../components/faq-item';
 import faq from '../utils/faq.json';

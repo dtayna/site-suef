@@ -4,7 +4,8 @@ import Inicio from "../pages/inicio";
 import Mapa from "../pages/mapa";
 import Equipe from "../pages/equipe";
 import Eventos from "../pages/eventos";
-import Duvidas from "../pages/duvidas"
+import Duvidas from "../pages/duvidas";
+import Indicadores from "../pages/indicadores";
 
 const MyRoutes = () => {
    return(
@@ -15,6 +16,7 @@ const MyRoutes = () => {
            <Route element = { <Equipe/> }  path="/equipe" />
            <Route element = { <Eventos/> }  path="/eventos" />
            <Route element = { <Duvidas/> }  path="/duvidas" />
+           <Route element = { <Indicadores/> }  path="/indicadores" />
        </Routes>
     </Router>
    )

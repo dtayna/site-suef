@@ -1,0 +1,31 @@
+{
+    "escolas": {
+
+        "Natal": 
+
+            [
+                {
+                    "codigo": "123",
+                    "nome": "Escola Estadual Teste 1"
+                },
+                {
+                    "codigo": "124",
+                    "nome": "Escola Estadual Teste 2"
+                }
+            ],
+
+        "Extremoz": 
+
+            [
+                {
+                    "codigo": "123",
+                    "nome": "Escola Estadual Teste Extre 1"
+                },
+                {
+                    "codigo": "124",
+                    "nome": "Escola Estadual Teste Extre 2"
+                }
+            ]
+    }
+        
+}
