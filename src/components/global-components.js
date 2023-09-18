@@ -31,6 +31,7 @@ export const Col = styled.div`
     gap: ${props => props.gap ? props.gap : "0px"};
     padding: ${props => props.padding ? props.padding : "5px"};
     max-width: ${props => props.maxwidth ? props.maxwidth : "100%"};
+    
 `;
 
 //Responsive Containers
