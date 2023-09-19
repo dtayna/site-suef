@@ -108,8 +108,9 @@ const Footer = () => {
             <Item>
                 <StartToCenter> 
                     <LogoRN src={UrlLogoRN}/>
-                </StartToCenter>
+                
                 <Text color="white" fontWeight="50">Secretaria de Estado da Educação, da Cultura, do Esporte e do Lazer - SEEC\RN</Text>
+                </StartToCenter>
             </Item>
             
         </Container>

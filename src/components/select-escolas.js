@@ -77,7 +77,7 @@ const  SelectEscolas = ({city}) => {
         escolasList = jsonEscolas.map(escola =>
             <option value={escola.id}>{escola.codigo} - {escola.nome}</option>
         );
-    }else{
+    } else {
         escolasList = <></>;
     }
 
