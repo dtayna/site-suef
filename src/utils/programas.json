@@ -4,6 +4,7 @@
             "integral" :
             {
                 "titulo": "Educação Integral Em Tempo Integral Do Ensino Fundamental",
+                "galeria": ["./imagensProgramas/integral1.jpeg","./imagensProgramas/pse1.jpeg"],
                 "equipe": "Angela Farias;\n Dorinha Santos; \n Fernanda Lessa; \nJarlene Azevedo; \nJucileide Santana;\n Maria Felipe; \nPaulo Gerson;\n Risoleide Alves;\n Teógenes Maria;\n Vanézia Luz; \nVera Coelho.",
                 "adesao": "",
                 "imagem": "./imagensProgramas/integral1.jpeg",
@@ -12,6 +13,7 @@
             "pse" :
             {
                 "titulo": "Programa Saúde na Escola - PSE",
+                "galeria": ["./imagensProgramas/pse1.jpeg","./imagensProgramas/pse2.jpeg","./imagensProgramas/pse3.jpeg", "./imagensProgramas/pse4.jpeg"],
                 "equipe": "Maria Felipe e Vera Lúcia.",
                 "adesao": "Atualmente o PSE no Rio Grande do norte está pactuado nos cento e sessenta e sete municípios, abrangendo 2.405 escolas, sendo 422 estaduais, 1.975 municipais e 8 Institutos federais, beneficiando um total de 500. 398 estudantes do território potiguar, com as seguintes ações:  Alimentação Saudável e Prevenção da Obesidade; Promoção da Atividade Física; Promoção da Cultura de Paz e Direitos Humanos; Prevenção das Violências e dos Acidentes; Prevenção de Doenças Negligenciadas; Prevenção ao Uso de Álcool, Tabaco e Outras Drogas; Prevenção à COVID 19; Saúde Ambiental; Saúde Bucal; Saúde Auditiva; Saúde Ocular; Saúde Mental; Saúde Sexual e Reprodutiva e Prevenção do HIV/IST; Verificação Vacinal",
                 "imagem": "./imagensProgramas/pse1.jpeg",

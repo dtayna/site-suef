@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Text , Line } from './global-components';
 import { MyContext } from '../utils/useContext.js';
-import React, { useState , useContext } from 'react';
+import { useContext } from 'react';
 
 
 const DivTitle = styled.div`

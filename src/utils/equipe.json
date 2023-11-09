@@ -1,15 +1,17 @@
 {
     "equipe":
         [   {
-            "foto": "./imagensEquipe/nazineide.png",
-            "nome":"Nazineide Brito" ,
-            "funcao": "Subcoordenadora - SUEF"
+                "foto": "./imagensEquipe/nazineide.png",
+                "nome":"Nazineide Brito" ,
+                "funcao": "Subcoordenadora - SUEF",
+                "email": "nazineidebrito@educar.rn.gov.br"
 
             },
             {
                 "foto": "./imagensEquipe/dorinha.png",
                 "nome":"Dorinha Santos" ,
-                "funcao": "Assessora Pedagógica"
+                "funcao": "Assessora Pedagógica",
+                "email": ""
 
             },
             {

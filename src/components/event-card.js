@@ -10,7 +10,7 @@ const DivTitle = styled.div`
     justify-content:end; 
     margin: 0;
     padding: 30px;
-    background: lightblue ${props => props.imagem != 'url(\"\")'? props.imagem : 'url(\"../imagemteste.jpg\")'} no-repeat 50% 10%;
+    background: lightblue ${props => props.imagem != 'url(\"\")'? props.imagem : 'url(\"./imagemteste.jpg\")'} no-repeat 50% 10%;
     border-radius: 5px 5px 0px 0px;
 `;
 
