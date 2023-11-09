@@ -9,7 +9,7 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+ 
     width: 94%;
     border-bottom: var(--lightBorder);
 
@@ -32,7 +32,7 @@ const Awnser = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+   
     width: 94%;
     display: ${props => props.clicado ? props.clicado : "none"};
 `;

@@ -4,6 +4,8 @@ import AccessibilityMenu from '../components/accessibility-menu';
 import UrlLogoRN from '../assets/svg/brasaoRN.svg';
 import UrlLogoAcessoAInformacao from '../assets/acessoainformacao.png';
 import BackToTopButton from '../components/back-to-top-button';
+import { MyContext } from '../utils/useContext.js';
+import React, { useContext } from 'react';
 
 // Antiga cor do header background-color: #F0FFF0;
 
@@ -14,7 +16,6 @@ const ImagensContainer = styled.div`
     justify-content: right;
     align-items: center;
     flex-wrap: wrap;
-    background-color: white;
     padding: 20px 5% 20px 20px;
     border-bottom: 1px solid var(--colorBorder);
 `;
@@ -62,10 +63,13 @@ const HeaderContainer = styled.header`
 `;
 
 const Header = () => {
+    const context = useContext(MyContext);
     return(
-        <HeaderContainer>
+        <HeaderContainer >
             <AccessibilityMenu/>
-            <ImagensContainer>
+            <ImagensContainer style={{
+            backgroundColor: context.contrastebg == 'black' ? 'white' : 'black',
+                }}>
                 <AcessoAInformacaoContainer> 
                     <LogoAcessoAInformacao src={UrlLogoAcessoAInformacao} alt="Acesso à Informação."/>
                     <TextoAcessoAInformacao> 

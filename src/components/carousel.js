@@ -20,10 +20,10 @@ const Imagem1 = styled.div`
     justify-content: center; 
     flex-direction: column;
     
-    margin-top: 30px;
-    height: 300px;
-    background-image: linear-gradient(to right, var(--mainColor1), var(--mainColor2));
-    color: var(--mainColor1);    
+    height: 400px;
+    background-size: cover !important;
+    background: lightblue url("../imagemteste.jpg") no-repeat center;
+    box-shadow: inset 0px -300px 100px rgb(0 0 0 / 80%); 
    
 
     @media screen and (max-width: 734px) {

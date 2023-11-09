@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { SuperTitle , Title, Col, Row } from '../components/global-components';
-import React, { useState} from 'react';
+import { MyContext } from '../utils/useContext.js';
+import React, { useState , useContext } from 'react';
 import SelectEscolas from '../components/select-escolas';
 import { Grafico } from '../components/grafico';
 
@@ -13,6 +14,24 @@ const GraphCard = styled.div`
     min-height: 400px;
     min-width: 300px;
     max-width: 300px;
+    text-wrap: wrap !important;
+    padding: 30px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 30px;
+    box-shadow: var(--grayBoxShadow);
+`;
+
+const BigGraphCard = styled.div`
+    word-break: break-word;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    min-height: 400px;
+    min-width: 300px;
+    max-width: 1000px;
+    width: 100%;
     text-wrap: wrap !important;
     padding: 30px;
     background-color: white;
@@ -63,10 +82,11 @@ const dataTurno = {
       'Integral'
   ], 
 };
+const context = useContext(MyContext);
 
   return(
         <Col justify={"center"} align={"center"} padding={"50px 0px 0px 0px"}> 
-            <SuperTitle color={"var(--mainColor1)"}> {city} </SuperTitle>
+            <SuperTitle style={{ color: context.contrastebg == 'black' ? 'var(--mainColor1)' : 'white'}}> {city} </SuperTitle>
             <SelectEscolas city={city}/>
             <Title> Total De Matrículas 2023 </Title>
             <Row justify={"center"} align={"center"}>
@@ -83,8 +103,13 @@ const dataTurno = {
                <GraphCard> <Grafico tipo={'d'} subtitulo={"Ensino Fundamental - RN - 2023"} titulo={"Testes"} dados={dataMatriculas}/> </GraphCard>
                <GraphCard> <Grafico tipo={'Pie'} subtitulo={"Ensino Fundamental - RN - 2023"} titulo={"Testes"} dados={dataMatriculas}/></GraphCard>
             </Row>
-            <Title> Indicadores Externos </Title>
-            <Title> Metas Sugeridas para a Escola </Title>
+            <Title> Indicadores Externos e Metas Sugeridas para a Escola </Title>
+            <Row>
+            <BigGraphCard>
+            <Grafico tipo={'Line'} subtitulo={"Ensino Fundamental - RN - 2023"} titulo={"Testes"} dados={dataMatriculas}/>
+
+            </BigGraphCard>
+            </Row>
         </Col>
   );
 }

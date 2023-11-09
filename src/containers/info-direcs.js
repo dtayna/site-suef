@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import DataDirec from '../components/data-direc';
 import { Row, Col, SuperTitle } from '../components/global-components';
 import direcs from '../utils/direcs.json';
-import React, { useState } from 'react';
+import { MyContext } from '../utils/useContext.js';
+import React, { useContext, useState } from 'react';
 
 
 const Container = styled.div`
@@ -27,10 +28,10 @@ const list = jsonDirecs.direcs.map(direc =>
         />
     </Col>
   );
-
+  const context = useContext(MyContext);
   return(
       <Container>
-            <SuperTitle color={"var(--mainColor1)"}>Diretorias Regionais de Educação e Cultura</SuperTitle>
+            <SuperTitle style={{ color: context.contrastebg == 'black' ? 'var(--mainColor1)' : 'white'}}>Diretorias Regionais de Educação e Cultura</SuperTitle>
             <br/>
         <Row>
             {list} 

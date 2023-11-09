@@ -1,0 +1,122 @@
+{
+    "equipe":
+        [   {
+            "foto": "./imagensEquipe/nazineide.png",
+            "nome":"Nazineide Brito" ,
+            "funcao": "Subcoordenadora - SUEF"
+
+            },
+            {
+                "foto": "./imagensEquipe/dorinha.png",
+                "nome":"Dorinha Santos" ,
+                "funcao": "Assessora Pedagógica"
+
+            },
+            {
+                "foto": "./imagensEquipe/risoleide.png",
+                "nome":"Risoleide Alves" ,
+                "funcao": "Assessora Pedagógica"
+
+            },
+            {
+                "foto": "./imagensEquipe/paulo.png",
+                "nome":"Paulo Gerson" ,
+                "funcao": "Assessor Pedagógico"
+
+            },
+            {
+                "foto": "./imagensEquipe/jucileide.jpg",
+                "nome":"Jucileide Santana" ,
+                "funcao": "Assessora Pedagógica"
+
+            },
+            {
+                "foto": "./imagensEquipe/jarlene.jpeg",
+                "nome":"Jarlene Azevedo" ,
+                "funcao": "Assessora Pedagógica"
+
+            },
+            {
+                "foto": "./imagensEquipe/vanezia.png",
+                "nome":"Vanézia Luz" ,
+                "funcao": "Assessora Pedagógica"
+
+            },
+            {
+                "foto": "./imagensEquipe/fernanda.png",
+                "nome":"Fernanda Lessa" ,
+                "funcao": "Assessora Pedagógica"
+
+            },{
+                "foto": "./imagensEquipe/giuliana.png",
+                "nome":"Giuliana Carvalho" ,
+                "funcao": "Assessora Pedagógica"
+
+            },
+            {
+                "foto": "./imagensEquipe/helena.png",
+                "nome":"Helena Soares" ,
+                "funcao": "Assessora Pedagógica"
+
+            },
+            {
+                "foto": "./imagensEquipe/kezia.png",
+                "nome":"Kézia Pereira" ,
+                "funcao": "Assessora Pedagógica"
+
+            },
+            {
+                "foto": "./imagensEquipe/mariadocarmo.png",
+                "nome":"Maria do Carmo" ,
+                "funcao": "Assessora Pedagógica"
+
+            },{
+                "foto": "./imagensEquipe/teogenes.png",
+                "nome":"Teógenes Maria" ,
+                "funcao": "Assessora Pedagógica"
+
+            },
+            {
+                "foto": "./imagensEquipe/angela.png",
+                "nome":"Angela Farias" ,
+                "funcao": "Assessora Pedagógica"
+
+            },
+            {
+                "foto": "./imagensEquipe/mariafelipe.jpeg",
+                "nome":"Maria Felipe" ,
+                "funcao": "Assessora Pedagógica"
+
+            },
+            {
+                "foto": "./imagensEquipe/jose.png",
+                "nome":"José Damião" ,
+                "funcao": "Assessor Pedagógico"
+
+            },{
+                "foto": "./imagensEquipe/vera.png",
+                "nome":"Vera Lúcia" ,
+                "funcao": "Assessora Pedagógica"
+
+            },
+            {
+                "foto": "./imagensEquipe/isabella.png",
+                "nome":"Isabella Reis" ,
+                "funcao": "Assessora Pedagógica"
+
+            },
+            {
+                "foto": "./imagensEquipe/terezinha.png",
+                "nome":"Terezinha Omar" ,
+                "funcao": "Assessora Pedagógica"
+
+            },
+            {
+                "foto": "./imagensEquipe/ana.png",
+                "nome":"Ana Lúcia" ,
+                "funcao": "Assessora Pedagógica"
+
+            }
+
+        ]
+}

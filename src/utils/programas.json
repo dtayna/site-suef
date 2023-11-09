@@ -1,0 +1,22 @@
+{
+    "programas":
+        {
+            "integral" :
+            {
+                "titulo": "Educação Integral Em Tempo Integral Do Ensino Fundamental",
+                "equipe": "Angela Farias;\n Dorinha Santos; \n Fernanda Lessa; \nJarlene Azevedo; \nJucileide Santana;\n Maria Felipe; \nPaulo Gerson;\n Risoleide Alves;\n Teógenes Maria;\n Vanézia Luz; \nVera Coelho.",
+                "adesao": "",
+                "imagem": "./imagensProgramas/integral1.jpeg",
+                "texto": "A Educação Integral em Tempo Integral do Ensino Fundamental (doravante EITI) tem como compromisso a promoção da formação omnilateral de crianças e adolescentes. Pauta-se na perspectiva dos territórios educativos, segundo a qual os espaços públicos, filantrópicos e privados disponíveis na rua, no bairro, na cidade e no campo podem ser utilizados como ambientes de aprendizagem voltados para a formação e o desenvolvimento humano multidimensional.\n A EITI começou a ser implantada em 2017, por meio da Portaria 211/2016, que estabeleceu diretrizes para o cumprimento da meta 06 do Plano Estadual de Educação – PEE/2015. Inicialmente, o Rio Grande do Norte contava com apenas 6 escolas de Educação Integral em Tempo Integral, porém, gradativamente, vem ampliando este número, contando atualmente (2023) com 54 instituições escolas que ofertam a referida concepção de educação. \n Com a adesão ao Programa Escola em Tempo Integral, instituído pelo governo federal, por meio da Lei nº 14.640/2023 e da Portaria n º 1.495, o estado do Rio Grande do Norte visa ampliar a oferta de matrículas e de escolas de Educação Integral em Tempo Integral na rede, o que pode levar ao alcance da meta 06 estabelecida pelo Plano Nacional de Educação e pelo Plano Estadual de Educação, alcançando o percentual de 50% de matrículas e de escolas (25%) em Tempo Integral."
+            },
+            "pse" :
+            {
+                "titulo": "Programa Saúde na Escola - PSE",
+                "equipe": "Maria Felipe e Vera Lúcia.",
+                "adesao": "Atualmente o PSE no Rio Grande do norte está pactuado nos cento e sessenta e sete municípios, abrangendo 2.405 escolas, sendo 422 estaduais, 1.975 municipais e 8 Institutos federais, beneficiando um total de 500. 398 estudantes do território potiguar, com as seguintes ações:  Alimentação Saudável e Prevenção da Obesidade; Promoção da Atividade Física; Promoção da Cultura de Paz e Direitos Humanos; Prevenção das Violências e dos Acidentes; Prevenção de Doenças Negligenciadas; Prevenção ao Uso de Álcool, Tabaco e Outras Drogas; Prevenção à COVID 19; Saúde Ambiental; Saúde Bucal; Saúde Auditiva; Saúde Ocular; Saúde Mental; Saúde Sexual e Reprodutiva e Prevenção do HIV/IST; Verificação Vacinal",
+                "imagem": "./imagensProgramas/pse1.jpeg",
+                "texto": "O Programa Saúde na Escola - PSE,  É uma política intersetorial da Saúde e da Educação, foi instituído em 2007 pelo Decreto Presidencial nº 6.286, de 5 de dezembro de 2007. As políticas de saúde e educação voltadas às crianças, adolescentes, jovens e adultos da educação pública brasileira se unem para promover saúde e educação integral. A intersetorialidade das redes públicas de saúde e de educação e das demais redes sociais para o desenvolvimento das ações do PSE implica mais do que ofertas de serviços num mesmo território, pois deve propiciar a sustentabilidade das ações a partir da conformação de redes de corresponsabilidade. A articulação entre Escola e Atenção Primária à Saúde é a base do Programa Saúde na Escola. O PSE é uma estratégia de integração da saúde e educação para o desenvolvimento da cidadania e da qualificação das políticas públicas brasileiras."
+            }
+
+        }
+}

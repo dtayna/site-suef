@@ -10,7 +10,7 @@ const DivTitle = styled.div`
     justify-content:end; 
     margin: 0;
     padding: 30px;
-    background: lightblue url("../imagemteste.jpg") no-repeat center;
+    background: lightblue ${props => props.imagem != 'url(\"\")'? props.imagem : 'url(\"../imagemteste.jpg\")'} no-repeat 50% 10%;
     border-radius: 5px 5px 0px 0px;
 `;
 
@@ -68,16 +68,16 @@ let bgcolor = "white";
 
 const  EventCard = (props) => {
 
-    if (props.tipo =="FORMAÇÃO"){
+    if (props.cor =="1"){
         bgcolor = "var(--mainColor1)";
-    }else if(props.tipo == "EVENTO"){
+    }else{
         bgcolor = "var(--mainColor2)";
     }
 
     return( 
         <>
         <Container backgroundcolor={bgcolor}>
-            <DivTitle>
+            <DivTitle imagem={'url(\"'+props.imagem+'\")'}>
             <Title>{props.title}</Title>
             <SubTitle>{props.tipo}</SubTitle>
            </DivTitle>

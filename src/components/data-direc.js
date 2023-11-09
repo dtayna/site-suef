@@ -1,5 +1,7 @@
 import styled from 'styled-components';
-import { Title, SubTitle, Text, Line } from './global-components'
+import { Title, SubTitle, Text, Line } from './global-components';
+import { MyContext } from '../utils/useContext.js';
+import { useContext } from 'react';
 
 const Container = styled.div`
     width: 550px;
@@ -12,9 +14,10 @@ const Container = styled.div`
   
 
 const DataDirec = ({direc, diretor, local, email, telefones}) => {
+  const context = useContext(MyContext);
     return(
       <Container>
-        <Title color={"var(--mainColor1)"}> {direc} </Title>
+        <Title style={{ color: context.contrastebg == 'black' ? 'var(--mainColor1)' : 'white'}}> {direc} </Title>
         <Line lineborder={"1px solid var(--colorSubtitle)"} linewidth={"100%"}/>
         <br/><br/>
         <SubTitle color={"var(--colorTitle)"}> {diretor} </SubTitle>

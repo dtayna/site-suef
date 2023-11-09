@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Pie , Bar , Doughnut } from "react-chartjs-2";
+import { Pie , Bar , Doughnut, Line } from "react-chartjs-2";
 import { Title } from "./global-components";
 
 const Fonte = styled.p`
@@ -77,10 +77,11 @@ export const Grafico = ({tipo, dados, titulo, subtitulo}) => {
                 }
                 }}
             />
-            :
-            <Doughnut
+            : tipo == 'Line'?
+            <Line
                 data={dados}
                 options={{
+                responsive: true,
                 plugins: {
                     title: {
                     display: true,
@@ -93,6 +94,22 @@ export const Grafico = ({tipo, dados, titulo, subtitulo}) => {
                 }
                 }}
             />
+            :
+            <Doughnut
+            data={dados}
+            options={{
+            plugins: {
+                title: {
+                display: true,
+                text: subtitulo,
+                },
+                legend: {
+                display: true,
+                position: 'bottom',
+                }
+            }
+            }}
+             />
             }
             
             <Fonte> Fonte: blabla</Fonte>

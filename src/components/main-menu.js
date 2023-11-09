@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import React, { useState , useEffect} from 'react';
-import ReactDOM from 'react-dom';
+import { useState } from 'react';
 import { Link, BrowserRouter } from 'react-router-dom';
 import { CgMenu } from 'react-icons/cg';
 import { BlockDesktop , BlockTabletSmartphone } from './global-components';
@@ -106,7 +105,12 @@ const MainMenu = (props) => {
             <ItemDesktop  itemcolor={"var(--green)"}>DÚVIDAS</ItemDesktop>
           </Link>
           <ItemDesktop  itemcolor={"var(--blue)"}>DOCUMENTOS</ItemDesktop>
-          <ItemDesktop  itemcolor={"var(--red)"}>PROJETOS</ItemDesktop>
+          <Link className="links" to="/programas">
+          <ItemDesktop  itemcolor={"var(--red)"}>
+            PROGRAMAS
+            
+          </ItemDesktop>
+          </Link>
           <Link className="links" to="/equipe">
             <ItemDesktop  itemcolor={"var(--mainColor1)"}>EQUIPE</ItemDesktop>
           </Link>
@@ -133,9 +137,13 @@ const MainMenu = (props) => {
       <Link className="links" to="/eventos">
         <ItemSmartphone>Eventos</ItemSmartphone>
       </Link>
+      <Link className="links" to="/duvidas">
       <ItemSmartphone>Dúvidas</ItemSmartphone>
+      </Link>
       <ItemSmartphone>Documentos</ItemSmartphone>
+      <Link className="links" to="/programas">
       <ItemSmartphone>Projetos</ItemSmartphone>
+      </Link>
       <Link className="links" to="/equipe">
         <ItemSmartphone2>Equipe</ItemSmartphone2>
       </Link>

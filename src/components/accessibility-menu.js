@@ -1,7 +1,9 @@
 import styled from 'styled-components';
+import React, { useState , useContext } from 'react';
 import { MdOutlineTextDecrease, MdOutlineTextIncrease, MdContrast, MdAccessibility } from 'react-icons/md';
 import { RiInstagramLine , RiYoutubeFill } from 'react-icons/ri';
-import { Icon } from './global-components'
+import { Icon } from './global-components';
+import { MyContext } from '../utils/useContext.js';
 
 const Item = styled.div`
   background: transparent;
@@ -23,21 +25,59 @@ const Fix = styled.div`
   z-index: 289;
 `;
 
+
 const AccessibilityMenu = () => {
+
+  const context = useContext(MyContext);
+  const root = document.documentElement;
+
+  function aumentaLetra() {
+    if (context.tamanho<4){
+    context.setTamanho(context.tamanho*1.5);
+    root.style.setProperty('--font-size', context.tamanho+"em");
+    localStorage.setItem('fontSize', context.tamanho+"em");
+    }
+  };
+
+  function diminuiLetra() {
+    if (context.tamanho>0.1){
+      context.setTamanho(context.tamanho*0.5);
+      root.style.setProperty('--font-size', context.tamanho+"em");
+      localStorage.setItem('fontSize', context.tamanho+"em");
+    }
+  };
+
+  function mudaContraste(){
+    localStorage.setItem('bgColor', context.contrastebg);
+    root.style.setProperty('--background-color', context.contrastebg);
+    root.style.setProperty('--color', context.contrastetext);
+    if(context.contrastebg == 'black'){
+      context.setContrastebg('#f6f6f6');
+      context.setContrastetext('#3d4147');
+    }else{
+      context.setContrastebg('black');
+      context.setContrastetext('white');
+    }
+    
+    
+    console.log(context.contrastebg);
+}
+
+
     return(
       <Fix>
       <Container>
-        <Item>
+        <Item onClick={() => mudaContraste()}>
           <Icon>
             <MdContrast/>
           </Icon>
         </Item>
-        <Item>
+        <Item onClick={() => diminuiLetra()}>
           <Icon>
             <MdOutlineTextDecrease/>
           </Icon>
         </Item>
-        <Item>
+        <Item onClick={() => aumentaLetra()}>
           <Icon>
             <MdOutlineTextIncrease/>
           </Icon>

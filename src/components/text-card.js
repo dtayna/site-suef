@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 import { Text , Line } from './global-components';
+import { MyContext } from '../utils/useContext.js';
+import React, { useState , useContext } from 'react';
+
 
 const DivTitle = styled.div`
     margin: 0;
@@ -19,29 +22,39 @@ const Title = styled.h3`
     color: ${props => props.colortitle ? props.colortitle : "white"};
 `; 
 
+
 const Container = styled.div`
-    background-color: white;
     max-width: 500px;
     border-radius: 5px;
     margin: 30px;
     box-shadow: var(--grayBoxShadow);
 `; 
 
+
+
+//var(--background-color);
+
 const  TextCard = (props) => {
+
+const context = useContext(MyContext);
+
     return( 
         <>
         
-        <Container>
+        <Container style={{
+        backgroundColor: context.contrastebg == 'black' ? 'white' : 'black',
+            }}>
+
             {props.tipo=="primario"
             ?<DivTitle>
                 <Title>{props.title}</Title>
             </DivTitle>
-            :<><Title colortitle={"var(--mainColor2)"}>{props.title}</Title>
+            :<><Title colortitle={"var(--mainColor2)"} >{props.title}</Title>
             <Line/>
             </>
             }
             <DivText>
-                <Text fontFamily={"'Montserrat',sans-serif"}>{props.text}</Text>
+                <Text indent="0" align="center" fontFamily={"'Montserrat',sans-serif"}>{props.text}</Text>
             </DivText>
         </Container>
         

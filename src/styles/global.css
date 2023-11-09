@@ -7,9 +7,12 @@
     --red: #FC6E3D; 
     --roxo: #412060;
 
-    --mainColor1: #003453;
+    --mainColor1:  #003453;
     --mainColor2:  #FC6E3D;
     --mainColor3: #054063;
+
+    --bgColor: white;
+    --color: #3d4147;
 
     --colorTitle: #4F4F4F;
     --colorSubtitle: #A9A9A9;
@@ -21,8 +24,17 @@
     --grayBoxShadow: 1px 2px 2px var(--grayShadow);
 
     --grayShadow: #e1e1e1;
+    --fontSize: 1em;
 }
 
 .links {
     text-decoration: none; 
+}
+
+.background-black {
+    background-color: black;
+  }
+  
+.background-white {
+    background-color: white;
 }

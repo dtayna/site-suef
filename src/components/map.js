@@ -3,7 +3,8 @@ import { ReactComponent as Mapa }  from '../assets/svg/mapa.svg';
 import styled from 'styled-components';
 import MapGraph from './map-graph';
 import Popup from './popup';
-import React, { useState } from 'react';
+import { MyContext } from '../utils/useContext.js';
+import { useContext, useState } from 'react';
 import { SuperTitle } from './global-components';
 import MapSVG from '../assets/map-svg';
 
@@ -19,6 +20,7 @@ const Container = styled.div`
 
 
 export const Map = () => {
+const context = useContext(MyContext);
 
 function activatePopup (cidade, quantidades) {
     setCity(cidade);
@@ -76,7 +78,7 @@ const [data, setData] = useState({
 
     return(
     <Container>
-      <SuperTitle color="var(--mainColor1)">Ensino Fundamental no Rio Grande do Norte</SuperTitle>
+      <SuperTitle style={{ color: context.contrastebg == 'black' ? 'var(--mainColor1)' : 'white'}}>Ensino Fundamental no Rio Grande do Norte</SuperTitle>
       <MapSVG activatePopup={activatePopup}></MapSVG>
       <MapGraph desactivatePopup={desactivatePopup} chartData={data} city={city} active={active}/>
     </Container>

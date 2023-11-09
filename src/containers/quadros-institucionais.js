@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import TextCard from '../components/text-card';
 import { SuperTitle } from '../components/global-components';
-
+import { MyContext } from '../utils/useContext.js';
+import { useContext } from 'react';
 
 const ContainerQuadros = styled.section`
   display: flex;
@@ -31,9 +32,11 @@ const Container = styled.div`
 `;
 
 const QuadrosInstitucionais = () => {
+
+  const context = useContext(MyContext);
   return(
         <Container>
-        <SuperTitle color={"var(--mainColor1)"}> Conheça a Subcoordenadoria do Ensino Fundamental do RN!</SuperTitle>
+        <SuperTitle style={{ color: context.contrastebg == 'black' ? 'var(--mainColor1)' : 'white'}}> Conheça a Subcoordenadoria do Ensino Fundamental do RN!</SuperTitle>
  
         <ContainerQuadros>
          

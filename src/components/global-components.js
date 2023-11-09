@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+
 export const GlobalStyles = styled.div`
     font-family: inherit;
     font-size: 1em;
@@ -20,6 +21,7 @@ export const Row = styled.div`
     gap: ${props => props.gap ? props.gap : "0px"};
     padding: ${props => props.padding ? props.padding : "5px"};
     max-width: ${props => props.maxwidth ? props.maxwidth : "100%"};
+    width: ${props => props.width ? props.width : "100%"};
 `;
 
 export const Col = styled.div`
@@ -100,9 +102,13 @@ export const ResponsiveRow = styled.div`
 //Components
 
 export const Text = styled.p`
-    color: ${props => props.color ? props.color : 'var(--colorText)'};
+    line-height: ${props => props.height ? props.height : '1'};;
+    text-indent: ${props => props.indent ? props.indent : '0em'};
+    color: ${props => props.color ? props.color : 'var(--color)'};
     font-family: ${props => props.fontFamily ? props.fontFamily : 'inherit'};
-    font-weight: ${props => props.fontWeight ? props.fontWeight : "400"};
+    font-weight: ${props => props.fontWeight ? props.fontWeight : '400'};
+    text-align: ${props => props.align ? props.align: 'start'};
+    font-size: var(--font-size);
 `;
 
 export const Link = styled.a`
@@ -122,7 +128,7 @@ export const LinkGraph = styled.a`
 
 export const Title = styled.h2`
     color: ${props => props.color ? props.color : 'var(--colorTitle)'};
-    textAlign: center ;
+    text-align: ${props => props.align ? props.align : 'start'} ;
 `;
 
 export const SuperTitle = styled.h1`
@@ -136,7 +142,7 @@ export const Icon = styled.div`
 `;
 
 export const SubTitle = styled.h5`
-    font-size: 1.0em;
+    font-size: var(--font-size);
     color: ${props => props.color ? props.color : 'var(--colorSubtitle)'};
     margin-top: -20px;
 `;
@@ -154,6 +160,7 @@ export const IconClose = styled.div`
     color:  ${props => props.color ? props.color : 'var(--colorTitle)'};
     float: right;
 `;
+
 
 const  None = () => {
     return(<></>);
