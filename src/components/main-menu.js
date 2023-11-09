@@ -91,7 +91,7 @@ const MainMenu = (props) => {
     <>
     <BlockDesktop>
       <ContainerDesktop>
-        <BrowserRouter >
+        
           <Link className="links" to="/">
             <ItemDesktop itemcolor={"var(--mainColor1)"}>INÍCIO</ItemDesktop>
           </Link>
@@ -114,7 +114,7 @@ const MainMenu = (props) => {
           <Link className="links" to="/equipe">
             <ItemDesktop  itemcolor={"var(--mainColor1)"}>EQUIPE</ItemDesktop>
           </Link>
-        </BrowserRouter>
+       
       </ContainerDesktop>
     </BlockDesktop>
 
@@ -127,7 +127,7 @@ const MainMenu = (props) => {
     </BlockTabletSmartphone>
 
     <MenuExpandido clicado={click}>
-    <BrowserRouter>
+   
       <Link className="links" to="/">
         <ItemSmartphone>Início</ItemSmartphone>
       </Link>
@@ -147,7 +147,7 @@ const MainMenu = (props) => {
       <Link className="links" to="/equipe">
         <ItemSmartphone2>Equipe</ItemSmartphone2>
       </Link>
-      </BrowserRouter>
+     
     </MenuExpandido>
     
     </>

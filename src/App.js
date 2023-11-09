@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {BrowserRouter as Router} from "react-router-dom";
 import Header from './containers/header';
 import Footer from './containers/footer';
 import MyRoutes from './utils/routes';
@@ -17,7 +18,7 @@ function App() {
   const context = useContext(MyContext);
   return (
     <div className="App">
-      
+      <Router history={History}>
       <GlobalStyles>
          <Paginas style={{
             backgroundColor: context.contrastebg == 'black' ? '#f6f6f6' : 'black',
@@ -27,7 +28,8 @@ function App() {
         </Paginas>
         <Footer/>
       </GlobalStyles>
-      
+      </Router>
+
     </div>
   );
 }

@@ -11,7 +11,7 @@ import Programas from "../pages/programas";
 
 const MyRoutes = () => {
    return(
-    <Router history={History}>
+    
        <Routes>
            <Route element = { <Inicio/> } path="/"/>
            <Route element = { <Mapa/> }  path="/mapa" />
@@ -22,7 +22,7 @@ const MyRoutes = () => {
            <Route element = { <Projetos/> }  path="/projetos" />
            <Route element = { <Programas/> }  path="/programas" />
        </Routes>
-    </Router>
+  
    )
 }
 
