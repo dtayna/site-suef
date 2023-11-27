@@ -63,7 +63,7 @@ const  ProfileCard = (props) => {
     return( 
         <>
         <Container style={{
-        backgroundColor: context.contrastebg == 'black' ? 'white' : 'black',
+        backgroundColor: context.contrastebg == 'black' ? 'white' : 'var(--blacklight)',
             }}> 
             <DivImage>
             <Image src={props.foto}></Image>

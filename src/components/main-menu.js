@@ -22,7 +22,6 @@ const ItemDesktop = styled.div`
   font-size: 0.8em;
   min-width: 90px;
   text-align: center;
-  background-color: white;
   border-bottom-width: 8px;
   border-bottom-style: solid;
   border-bottom-color: ${props => props.itemcolor};

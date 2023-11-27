@@ -65,7 +65,9 @@ const HeaderContainer = styled.header`
 const Header = () => {
     const context = useContext(MyContext);
     return(
-        <HeaderContainer >
+        <HeaderContainer style={{
+            backgroundColor: context.contrastebg == 'black' ? 'white' : 'var(--blacklight)',
+                }} >
             <AccessibilityMenu/>
             <ImagensContainer style={{
             backgroundColor: context.contrastebg == 'black' ? 'white' : 'black',
@@ -78,7 +80,7 @@ const Header = () => {
                 </AcessoAInformacaoContainer>
                 <LogoRN src={UrlLogoRN}/>
             </ImagensContainer>
-            <MainMenu/>
+            <MainMenu  />
             <BackToTopButton/>
         </HeaderContainer>
         

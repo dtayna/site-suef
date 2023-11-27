@@ -32,7 +32,7 @@ const Duvidas = () => {
             <SuperTitle style={{ color: context.contrastebg == 'black' ? 'var(--mainColor1)' : 'white',}}> Dúvidas Frequentes: </SuperTitle>
             <br/>
             <Container style={{
-        backgroundColor: context.contrastebg == 'black' ? 'white' : 'black',
+        backgroundColor: context.contrastebg == 'black' ? 'white' : 'var(--blacklight)',
             }} >
              {questionslist}
             </Container>

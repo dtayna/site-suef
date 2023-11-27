@@ -18,6 +18,15 @@
                 "adesao": "Atualmente o PSE no Rio Grande do norte está pactuado nos cento e sessenta e sete municípios, abrangendo 2.405 escolas, sendo 422 estaduais, 1.975 municipais e 8 Institutos federais, beneficiando um total de 500. 398 estudantes do território potiguar, com as seguintes ações:  Alimentação Saudável e Prevenção da Obesidade; Promoção da Atividade Física; Promoção da Cultura de Paz e Direitos Humanos; Prevenção das Violências e dos Acidentes; Prevenção de Doenças Negligenciadas; Prevenção ao Uso de Álcool, Tabaco e Outras Drogas; Prevenção à COVID 19; Saúde Ambiental; Saúde Bucal; Saúde Auditiva; Saúde Ocular; Saúde Mental; Saúde Sexual e Reprodutiva e Prevenção do HIV/IST; Verificação Vacinal",
                 "imagem": "./imagensProgramas/pse1.jpeg",
                 "texto": "O Programa Saúde na Escola - PSE,  É uma política intersetorial da Saúde e da Educação, foi instituído em 2007 pelo Decreto Presidencial nº 6.286, de 5 de dezembro de 2007. As políticas de saúde e educação voltadas às crianças, adolescentes, jovens e adultos da educação pública brasileira se unem para promover saúde e educação integral. A intersetorialidade das redes públicas de saúde e de educação e das demais redes sociais para o desenvolvimento das ações do PSE implica mais do que ofertas de serviços num mesmo território, pois deve propiciar a sustentabilidade das ações a partir da conformação de redes de corresponsabilidade. A articulação entre Escola e Atenção Primária à Saúde é a base do Programa Saúde na Escola. O PSE é uma estratégia de integração da saúde e educação para o desenvolvimento da cidadania e da qualificação das políticas públicas brasileiras."
+            },
+            "aprendervalor":
+            {
+                "titulo": "Aprender Valor",
+                "galeria" : ["./imagensProgramas/ap2.jpeg","./imagensProgramas/ap1.jpeg","./imagensProgramas/ap3.jpeg","./imagensProgramas/ap4.jpeg","./imagensProgramas/ap5.jpeg"],
+                "equipe": "Angela Maria.",
+                "adesao":"",
+                "imagem": "",
+                "texto": "O Aprender Valor é um programa do Banco Central do Brasil que leva educação financeira aos estudantes de escolas públicas brasileiras de ensino fundamental. O programa é financiado com recursos do Fundo de Defesa de Direitos Difusos (FDD), do Ministério da Justiça e Segurança Pública, e desenvolvido em parceria com o Centro de Políticas Públicas e Avaliação da Educação da Universidade Federal de Juiz de Fora (CAEd/UFJF)."
             }
 
         }

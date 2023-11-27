@@ -53,11 +53,14 @@ const Projeto = () => {
             {titulo}
             </SuperTitle>
           </Col>
+
+
           <BlockDesktop>
-          <Row maxwidth="90%" align="start" padding="0px 0px 5% 5%">
+          <Row maxwidth="90%" align="start" padding="0px 0px 0px 5%">
             <Col maxwidth="30%" >
-            <ImagemItem height={'250px'} width={'100%'} maxwidth={'400px'} imagem={galeria[0]} radius={"5px"}/>
-                <TextCard
+            <ImagemItem height={'250px'} width={'95%'} maxwidth={'400px'} imagem={galeria[0]} radius={"5px"}/>
+            <TextCard
+                width={'100%'}
                 tipo={"primario"}
                 primeiro={true}
                 title={"Equipe"} 
@@ -83,7 +86,7 @@ const Projeto = () => {
             </Col>
           </Row>
           <Col>
-          <Row maxwidth="90%">
+          <Row maxwidth="90%" padding="0px 0px 0px 0px">
             <SuperTitle style={{ color: context.contrastebg == 'black' ? 'var(--mainColor1)' : 'white',}}>
                Galeria do Programa
                 </SuperTitle>
@@ -97,19 +100,22 @@ const Projeto = () => {
           </BlockDesktop>
 
 
-
-
           <BlockTabletSmartphone>
-            <Col maxwidth="90%" align="center" padding="0px 0px 5% 5%">
+            <Col maxwidth="90%" align="center" padding="0px 0px 0% 2%">
             <Text align="justify" indent="1.5em" height="1.5">
                 {texto}
               </Text>
+              { adesao != ""?
+              <>
               <Title>
                 Informações Sobre a Adesão ao Programa
               </Title>
               <Text align="justify" indent="1.5em" height="1.5">
                 {adesao}
               </Text>
+              </>:
+              <></>
+              }
               <TextCard
                 tipo={"primario"}
                 primeiro={true}

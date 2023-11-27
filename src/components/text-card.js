@@ -25,6 +25,7 @@ const Title = styled.h3`
 
 const Container = styled.div`
     max-width: 500px;
+    width: 95%;
     border-radius: 5px;
     margin: 30px;
     box-shadow: var(--grayBoxShadow);
@@ -42,7 +43,7 @@ const context = useContext(MyContext);
         <>
         
         <Container style={{
-        backgroundColor: context.contrastebg == 'black' ? 'white' : 'black',
+        backgroundColor: context.contrastebg == 'black' ? 'white' : 'var(--blacklight)',
             }}>
 
             {props.tipo=="primario"

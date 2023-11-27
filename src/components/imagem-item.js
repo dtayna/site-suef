@@ -13,6 +13,7 @@ const Miniatura = styled.div`
     height:  ${props => props.height !="" ? props.height : '250px'};
     width:  ${props => props.width !="" ? props.width : '250px'};
     background-size: cover;
+    
 `;
 
 const Divi = styled.div`
@@ -41,7 +42,7 @@ const Popup = styled.div`
     width: 50%;
     max-width: 80%;
     max-height: 80%;
-    padding: 2%;
+    padding: 3%;
     border: var(--lightBorder);
     
 `;
